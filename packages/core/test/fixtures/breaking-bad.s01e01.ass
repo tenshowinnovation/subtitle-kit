@@ -1,0 +1,733 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation:
+Original Timing:
+Original Editing:
+Script Updated By:
+Update Details:
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 1
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Subtitle,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: yanzhiyuan,FZCuYuan-M03S,50,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: zhushi,SimHei,28,&H00FFFFFF,&HFF14DCE9,&H001FC7F0,&H00330F0A,-1,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: duibai01,KaiTi,70,&H00FFFFFF,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: zuozhexinxi,FZHei-B01S,16,&H00FFFFFF,&HF0000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: piantoujieshao,Microsoft YaHei,70,&H00C2E0EC,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,10,10,10,134
+Style: kuangjia,FZHei-B01S,100,&HFF330F0A,&H000000FF,&H0054A41A,&H00000000,0,0,0,0,200,120,0,0,1,5,2,2,10,10,10,134
+Style: renwujianjie,FZHei-B01S,8,&H00FFFFFF,&H00330F0A,&H00000000,&H00000000,-1,0,0,0,100,123,0,0,1,0,1,1,10,10,10,134
+Style: yingzimu,FZZhengHeiS-EB-GB,20,&H00FFFFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: duibai,KaiTi,20,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: Default,FZHei-B01S,21,&H00FFFFFF,&HF0000000,&H000C3300,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,5,5,5,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:02:14.33,0:02:16.24,duibai,NTP,0000,0000,0000,,我叫沃尔特·哈特维尔·怀特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}My name is Walter Hartwell White.{\r}
+Dialogue: 0,0:02:16.45,0:02:19.31,duibai,NTP,0000,0000,0000,,住在新墨西哥州阿尔布开克\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I live at 308 Negra Arroyo lane{\r}
+Dialogue: 0,0:02:19.35,0:02:21.93,duibai,NTP,0000,0000,0000,,内格拉阿罗约巷308号  邮编87104\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Albuquerque New Mexico 87104.{\r}
+Dialogue: 0,0:02:21.98,0:02:23.61,duibai,NTP,0000,0000,0000,,我要告诉所有的执法者\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}To all law enforcement entitles{\r}
+Dialogue: 0,0:02:23.61,0:02:25.40,duibai,NTP,0000,0000,0000,,这不是一段认罪声明\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}this is not an admission of guilt.{\r}
+Dialogue: 0,0:02:26.06,0:02:28.20,duibai,NTP,0000,0000,0000,,而是我跟家人之间的对话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I am speaking to my family now.{\r}
+Dialogue: 0,0:02:35.87,0:02:36.96,duibai,NTP,0000,0000,0000,,斯凯勒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Skyler{\r}
+Dialogue: 0,0:02:37.93,0:02:39.63,duibai,NTP,0000,0000,0000,,你是我今生的至爱\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You are the love of my life.{\r}
+Dialogue: 0,0:02:40.24,0:02:41.81,duibai,NTP,0000,0000,0000,,我希望你能了解这点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I hope you know that.{\r}
+Dialogue: 0,0:02:43.57,0:02:45.06,duibai,NTP,0000,0000,0000,,小沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walter Junior{\r}
+Dialogue: 0,0:02:46.08,0:02:47.48,duibai,NTP,0000,0000,0000,,在我心中你是个男子汉了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're my big man.{\r}
+Dialogue: 0,0:02:48.61,0:02:49.82,duibai,NTP,0000,0000,0000,,在接下来的几天里\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There are{\r}
+Dialogue: 0,0:02:49.91,0:02:51.90,duibai,NTP,0000,0000,0000,,你们会\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There are going to be some{\r}
+Dialogue: 0,0:02:52.39,0:02:53.94,duibai,NTP,0000,0000,0000,,你们会知道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Things things{\r}
+Dialogue: 0,0:02:54.64,0:02:55.43,duibai,NTP,0000,0000,0000,,关于我的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That you'll come to{\r}
+Dialogue: 0,0:02:55.43,0:02:57.77,duibai,NTP,0000,0000,0000,,关于我的一些事情\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Learn about me in the next few days.{\r}
+Dialogue: 0,0:02:57.79,0:02:59.82,duibai,NTP,0000,0000,0000,,我只想你们清楚一点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I just want you to know{\r}
+Dialogue: 0,0:03:00.27,0:03:03.60,duibai,NTP,0000,0000,0000,,无论发生什么事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That no no matter how it may look{\r}
+Dialogue: 0,0:03:03.60,0:03:05.45,duibai,NTP,0000,0000,0000,,我心里牵挂的只有你们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I only had you in my heart.{\r}
+Dialogue: 0,0:03:12.51,0:03:13.59,duibai,NTP,0000,0000,0000,,永别了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Good-bye.{\r}
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\pos(90,172)\pos(99,175)\b1\fs35\c&H54A41A&\fn黑体\bord0\blur1}绝
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\pos(115,168)\pos(119,168)\b1\fs30\fn黑体\bord0\blur1}命
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\pos(137,188)\pos(139,188)\b1\fs35\c&H54A41A&\fn黑体\bord0\blur1}毒
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\pos(159,188)\pos(159,188)\b1\fs30\fn黑体\bord0\blur1}师
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\pos(137,207)}{\pos(155,202)}{\b1}{\fs18}{\fn微软雅黑}{\bord0}{\blur1}第一季 第一集
+Dialogue: 0,0:03:53.00,0:04:03.50,Default,NTP,0000,0000,0000,,{\fad(800,800)\b1\fs16\fn微软雅黑\bord0\blur1\pos(130.5,225)}试播集 Pilot
+Dialogue: 0,0:04:05.10,0:04:08.20,Subtitle,,0000,0000,0001,,{\blur2\fnKaiTi\fs16\1c&H3CF1F3&\b1}--&&本影片由{\1c&HFF8000&\b1}￡cXcY-QQ群 377633162￡\N{\fnKaiTi\1c&H3CF1F3&\b1} 根据YYeTs字幕校订&&--
+Dialogue: 0,0:04:10.01,0:04:12.65,yingzimu,NTP,0000,0000,0000,,{\fn黑体\fs16\pos(185,270)}三    周    前
+Dialogue: 0,0:05:00.18,0:05:02.25,yingzimu,NTP,0000,0000,0000,,{\fs8\bord0\fn黑体\pos(210,195)\frz348\1c&H000000&}诺贝尔获奖研究项目杰出贡献奖
+Dialogue: 0,0:05:00.18,0:05:02.25,yingzimu,NTP,0000,0000,0000,,{\fs10\bord0\fn黑体\pos(210,138)\frz353\1c&H000000&}沃尔特·H·怀特
+Dialogue: 0,0:05:00.18,0:05:02.25,yingzimu,NTP,0000,0000,0000,,{\fs8\bord0\fn黑体\pos(210,155)\frz351\1c&H000000&}结晶学质子辐射效应研究带头人
+Dialogue: 0,0:05:16.08,0:05:17.54,duibai,NTP,0000,0000,0000,,生日快乐\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Happy birthday.{\r}
+Dialogue: 0,0:05:20.06,0:05:21.18,duibai,NTP,0000,0000,0000,,瞧瞧这个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Look at that.{\r}
+Dialogue: 0,0:05:22.11,0:05:24.12,duibai,NTP,0000,0000,0000,,这是素培根\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That is veggie bacon.{\r}
+Dialogue: 0,0:05:24.92,0:05:26.68,duibai,NTP,0000,0000,0000,,甭管你信不信  零胆固醇的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Believe it or not. zero cholesterol.{\r}
+Dialogue: 0,0:05:26.68,0:05:29.09,duibai,NTP,0000,0000,0000,,吃起来也是一个味儿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You won't even taste the difference.{\r}
+Dialogue: 0,0:05:30.27,0:05:31.92,duibai,NTP,0000,0000,0000,,你觉得自己大概几点能到家\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What time do you think you'll be home?{\r}
+Dialogue: 0,0:05:31.92,0:05:32.99,duibai,NTP,0000,0000,0000,,老时间\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Same time.{\r}
+Dialogue: 0,0:05:33.06,0:05:35.34,duibai,NTP,0000,0000,0000,,我不希望他又缠你一整晚\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't want him dicking you around tonight.{\r}
+Dialogue: 0,0:05:35.42,0:05:36.87,duibai,NTP,0000,0000,0000,,你的工资只给到5点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You get paid till 5{\r}
+Dialogue: 0,0:05:36.87,0:05:38.96,duibai,NTP,0000,0000,0000,,你工作到5点  这就行了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You work till 5 no later.{\r}
+Dialogue: 0,0:05:43.50,0:05:45.39,duibai,NTP,0000,0000,0000,,-生日快乐啊  -谢谢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Hey, happy birthday.  - Well, thank you.{\r}
+Dialogue: 0,0:05:45.43,0:05:47.38,duibai,NTP,0000,0000,0000,,你又起晚了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're late again.{\r}
+Dialogue: 0,0:05:47.56,0:05:50.38,duibai,NTP,0000,0000,0000,,又没热水了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There was no hot water again.{\r}
+Dialogue: 0,0:05:50.45,0:05:52.21,duibai,NTP,0000,0000,0000,,我有个简单应对的办法\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I have an easy fix for that.{\r}
+Dialogue: 0,0:05:52.35,0:05:53.81,duibai,NTP,0000,0000,0000,,你早点起床\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You wake up early{\r}
+Dialogue: 0,0:05:53.95,0:05:56.84,duibai,NTP,0000,0000,0000,,然后就可以第一个洗澡了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And then you get to be the first person in the shower.{\r}
+Dialogue: 0,0:05:57.13,0:05:58.48,duibai,NTP,0000,0000,0000,,我也有个办法\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I have an idea.{\r}
+Dialogue: 0,0:06:00.64,0:06:04.90,duibai,NTP,0000,0000,0000,,为啥不买个新热水器呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How about buy a new hot water heater?{\r}
+Dialogue: 0,0:06:04.90,0:06:06.10,duibai,NTP,0000,0000,0000,,这主意如何\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How's that idea?{\r}
+Dialogue: 0,0:06:06.10,0:06:09.42,duibai,NTP,0000,0000,0000,,都提了成千上万次了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}For the millionth and billionth time.{\r}
+Dialogue: 0,0:06:11.51,0:06:13.96,duibai,NTP,0000,0000,0000,,-止咳药喝过没  -喝了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Did you take your echinacea?  - Yeah.{\r}
+Dialogue: 0,0:06:14.15,0:06:15.84,duibai,NTP,0000,0000,0000,,我觉得好多了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I think it's getting better.{\r}
+Dialogue: 0,0:06:16.17,0:06:19.33,duibai,NTP,0000,0000,0000,,这是什么鬼玩意儿啊\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What the hell is this?{\r}
+Dialogue: 0,0:06:19.85,0:06:23.47,duibai,NTP,0000,0000,0000,,素培根  我觉得我们该注意下胆固醇了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's veggie bacon. We're watching our cholesterol, I guess.{\r}
+Dialogue: 0,0:06:23.47,0:06:25.60,duibai,NTP,0000,0000,0000,,别给我  我要真培根\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Not me. I want real bacon.{\r}
+Dialogue: 0,0:06:25.60,0:06:27.44,duibai,NTP,0000,0000,0000,,不要这假冒的破烂\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Not this fake crap.{\r}
+Dialogue: 0,0:06:27.44,0:06:28.44,duibai,NTP,0000,0000,0000,,真是糟糕\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Too bad.{\r}
+Dialogue: 0,0:06:28.59,0:06:29.59,duibai,NTP,0000,0000,0000,,吃了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Eat it.{\r}
+Dialogue: 0,0:06:30.22,0:06:32.94,duibai,NTP,0000,0000,0000,,这闻上去就像创口贴\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This smells like band-aids.{\r}
+Dialogue: 0,0:06:32.94,0:06:35.06,duibai,NTP,0000,0000,0000,,给我吃了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Eat it.{\r}
+Dialogue: 0,0:06:39.81,0:06:42.08,duibai,NTP,0000,0000,0000,,成为老人家感觉怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So how's it feel to be old?{\r}
+Dialogue: 0,0:06:42.44,0:06:44.69,duibai,NTP,0000,0000,0000,,当个小破孩感觉怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How does it feel to be a smart ass?{\r}
+Dialogue: 0,0:06:44.99,0:06:46.02,duibai,NTP,0000,0000,0000,,对得好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Good.{\r}
+Dialogue: 0,0:06:48.41,0:06:49.76,duibai,NTP,0000,0000,0000,,赶紧吃吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Eat your veggie bacon.{\r}
+Dialogue: 0,0:07:09.18,0:07:11.13,duibai,NTP,0000,0000,0000,,-准备好了吗  -好了  我能行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- You're all set? - Yeah, I'm fine.{\r}
+Dialogue: 0,0:07:11.13,0:07:13.34,duibai,NTP,0000,0000,0000,,-那好  回家见  -再见\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- All right, see you at home. - Okay, see you.{\r}
+Dialogue: 0,0:07:17.79,0:07:19.44,duibai,NTP,0000,0000,0000,,化学\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chemistry{\r}
+Dialogue: 0,0:07:19.74,0:07:22.58,duibai,NTP,0000,0000,0000,,是研究什么的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It is the study of what?{\r}
+Dialogue: 0,0:07:23.51,0:07:24.80,duibai,NTP,0000,0000,0000,,谁知道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Anyone?{\r}
+Dialogue: 0,0:07:26.68,0:07:27.68,duibai,NTP,0000,0000,0000,,本恩\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ben.{\r}
+Dialogue: 0,0:07:28.13,0:07:29.11,duibai,NTP,0000,0000,0000,,化学品\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chemicals?{\r}
+Dialogue: 0,0:07:29.11,0:07:30.60,duibai,NTP,0000,0000,0000,,化学品\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chemicals.{\r}
+Dialogue: 0,0:07:31.20,0:07:32.78,duibai,NTP,0000,0000,0000,,不对\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No.{\r}
+Dialogue: 0,0:07:33.36,0:07:35.68,duibai,NTP,0000,0000,0000,,化学\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chemistry is{\r}
+Dialogue: 0,0:07:36.28,0:07:37.67,duibai,NTP,0000,0000,0000,,从学术层面说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well technically{\r}
+Dialogue: 0,0:07:37.95,0:07:40.43,duibai,NTP,0000,0000,0000,,化学是一门研究物质的学科\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chemistry is the study of matter.{\r}
+Dialogue: 0,0:07:41.49,0:07:44.96,duibai,NTP,0000,0000,0000,,但是我更倾向于它是一门研究变化的学科\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But I prefer to see it as the study of change.{\r}
+Dialogue: 0,0:07:44.96,0:07:47.32,duibai,NTP,0000,0000,0000,,现在  我们这样来设想一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Now just just think about this.{\r}
+Dialogue: 0,0:07:47.62,0:07:48.70,duibai,NTP,0000,0000,0000,,电子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Electrons.{\r}
+Dialogue: 0,0:07:49.43,0:07:50.40,duibai,NTP,0000,0000,0000,,它们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They{\r}
+Dialogue: 0,0:07:51.72,0:07:53.40,duibai,NTP,0000,0000,0000,,改变自身的能级\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Change their energy levels.{\r}
+Dialogue: 0,0:07:53.40,0:07:54.59,duibai,NTP,0000,0000,0000,,分子呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Molecules.{\r}
+Dialogue: 0,0:07:55.40,0:07:57.78,duibai,NTP,0000,0000,0000,,分子改变自身的化学键\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Molecules change their bonds.{\r}
+Dialogue: 0,0:07:58.72,0:07:59.81,duibai,NTP,0000,0000,0000,,这些元素\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Elements.{\r}
+Dialogue: 0,0:07:59.95,0:08:02.84,duibai,NTP,0000,0000,0000,,进行组合从而形成化合物\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They combine and change into compounds.{\r}
+Dialogue: 0,0:08:03.63,0:08:06.28,duibai,NTP,0000,0000,0000,,这就是所有生命的组成形式\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well that's that's all of life.{\r}
+Dialogue: 0,0:08:06.28,0:08:08.57,duibai,NTP,0000,0000,0000,,对不对  我是说  这是个恒定的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Right? I mean it's just it's the constant.{\r}
+Dialogue: 0,0:08:08.59,0:08:11.10,duibai,NTP,0000,0000,0000,,循环的过程\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's the cycle. It's solution{\r}
+Dialogue: 0,0:08:11.39,0:08:14.09,duibai,NTP,0000,0000,0000,,从生长到衰败  再到分解并溶化\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Dissolution just over and over and over.{\r}
+Dialogue: 0,0:08:14.18,0:08:18.77,duibai,NTP,0000,0000,0000,,如此循环  周而复始\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It is growth then decay then transformation.{\r}
+Dialogue: 0,0:08:21.97,0:08:24.39,duibai,NTP,0000,0000,0000,,这是如此的迷人  真的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It is fascinating really.{\r}
+Dialogue: 0,0:08:30.77,0:08:31.60,duibai,NTP,0000,0000,0000,,查德\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chad{\r}
+Dialogue: 0,0:08:33.49,0:08:35.84,duibai,NTP,0000,0000,0000,,你课桌坏了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Is there something wrong with your table?{\r}
+Dialogue: 0,0:08:38.49,0:08:41.22,duibai,NTP,0000,0000,0000,,好了  离子键\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay. Ionic bonds{\r}
+Dialogue: 0,0:08:50.72,0:08:51.88,duibai,NTP,0000,0000,0000,,坐好了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Are you done?{\r}
+Dialogue: 0,0:08:54.64,0:08:55.85,duibai,NTP,0000,0000,0000,,离子键\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ionic bonds.{\r}
+Dialogue: 0,0:08:56.31,0:08:57.47,duibai,NTP,0000,0000,0000,,第六章节\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Chapter 6.{\r}
+Dialogue: 0,0:09:09.54,0:09:12.67,duibai,NTP,0000,0000,0000,,一二三  这是是十块  再加十块一共二十\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}One, two, three makes 10, and 10 makes 20.{\r}
+Dialogue: 0,0:09:12.98,0:09:14.09,duibai,NTP,0000,0000,0000,,这是您的收据\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Here's your receipt{\r}
+Dialogue: 0,0:09:14.10,0:09:16.47,duibai,NTP,0000,0000,0000,,然后拿着这张小票去找洗车员吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And hand this claiming disc to your car wash professional.{\r}
+Dialogue: 0,0:09:16.50,0:09:18.28,duibai,NTP,0000,0000,0000,,-多谢  -欢迎再次光临\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Thank you.  - Come again.{\r}
+Dialogue: 0,0:09:30.05,0:09:31.21,duibai,NTP,0000,0000,0000,,他不来了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He's not coming.{\r}
+Dialogue: 0,0:09:31.24,0:09:32.69,duibai,NTP,0000,0000,0000,,他说他不干了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He said he quits.{\r}
+Dialogue: 0,0:09:33.64,0:09:35.47,duibai,NTP,0000,0000,0000,,现在由我来管收款机\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm gonna run the register.{\r}
+Dialogue: 0,0:09:35.64,0:09:38.52,duibai,NTP,0000,0000,0000,,博格丹  别这样  我们说好的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Bogdan, no. We talked about this.{\r}
+Dialogue: 0,0:09:38.52,0:09:40.05,duibai,NTP,0000,0000,0000,,我人手不足  沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm shorthanded, Walter.{\r}
+Dialogue: 0,0:09:40.15,0:09:41.45,duibai,NTP,0000,0000,0000,,我能怎么办\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What am I to do?{\r}
+Dialogue: 0,0:09:43.94,0:09:44.94,duibai,NTP,0000,0000,0000,,沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walter?{\r}
+Dialogue: 0,0:09:46.94,0:09:48.33,duibai,NTP,0000,0000,0000,,我能怎么办\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What am I to do?{\r}
+Dialogue: 0,0:10:08.92,0:10:11.07,duibai,NTP,0000,0000,0000,,怀特老师\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey, Mr. White.{\r}
+Dialogue: 0,0:10:12.07,0:10:14.18,duibai,NTP,0000,0000,0000,,车轮擦亮点哦\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Make those tires shine, huh?{\r}
+Dialogue: 0,0:10:14.18,0:10:15.67,duibai,NTP,0000,0000,0000,,你们肯定猜不到谁在给查德擦车\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You will not believe who's cleaning Chad's car.{\r}
+Dialogue: 0,0:10:16.10,0:10:19.10,duibai,NTP,0000,0000,0000,,是怀特老师\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mr. White.{\r}
+Dialogue: 0,0:10:19.10,0:10:22.31,duibai,NTP,0000,0000,0000,,化学课老师\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}From chemistry.{\r}
+Dialogue: 0,0:10:42.07,0:10:44.30,duibai,NTP,0000,0000,0000,,惊喜\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Surprise.{\r}
+Dialogue: 0,0:10:44.79,0:10:46.63,duibai,NTP,0000,0000,0000,,生日快乐  老爸\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Happy birthday, Dad.{\r}
+Dialogue: 0,0:10:50.21,0:10:52.39,duibai,NTP,0000,0000,0000,,你回来得太晚了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're so very late.{\r}
+Dialogue: 0,0:10:53.48,0:10:55.46,duibai,NTP,0000,0000,0000,,我说真的  斯凯勒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Really I'm serious, Skyler.{\r}
+Dialogue: 0,0:10:55.72,0:10:58.00,duibai,NTP,0000,0000,0000,,你的小腹平得就跟洗衣板似的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean you're flat as a washboard.{\r}
+Dialogue: 0,0:10:58.63,0:11:00.16,duibai,NTP,0000,0000,0000,,看上去太棒了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You look awesome.{\r}
+Dialogue: 0,0:11:00.36,0:11:02.17,duibai,NTP,0000,0000,0000,,她一点都看不出来  是吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}She's not showing at all, is she?{\r}
+Dialogue: 0,0:11:02.18,0:11:03.67,duibai,NTP,0000,0000,0000,,还是有那么一点的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}She's showing a little.{\r}
+Dialogue: 0,0:11:05.23,0:11:07.44,duibai,NTP,0000,0000,0000,,卡门  这是我妹妹玛丽\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Carmen this is my sister Marie.{\r}
+Dialogue: 0,0:11:07.93,0:11:09.96,duibai,NTP,0000,0000,0000,,-很高兴见到你  -你好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Pleased to meet you.  - Hi.{\r}
+Dialogue: 0,0:11:11.69,0:11:14.45,duibai,NTP,0000,0000,0000,,格洛克-22  我的日常配枪\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Glock 22. It's my daily carry, okay?{\r}
+Dialogue: 0,0:11:14.67,0:11:17.55,duibai,NTP,0000,0000,0000,,除非是B+式自动装填\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean unless you're talking what plus b-plus loads{\r}
+Dialogue: 0,0:11:17.58,0:11:19.74,duibai,NTP,0000,0000,0000,,9毫米口径的都是扔货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}you can forget the 9-mil all right?{\r}
+Dialogue: 0,0:11:19.74,0:11:22.52,duibai,NTP,0000,0000,0000,,我见过9毫米子弹从挡风玻璃上弹开\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I seen one of those bounce off a windshield one time.{\r}
+Dialogue: 0,0:11:22.52,0:11:24.41,duibai,NTP,0000,0000,0000,,那枪是你射的吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah the way you shoot.{\r}
+Dialogue: 0,0:11:25.05,0:11:26.55,duibai,NTP,0000,0000,0000,,如果你要带把枪\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}If you're gonna bring a gun, babe.{\r}
+Dialogue: 0,0:11:26.56,0:11:28.25,duibai,NTP,0000,0000,0000,,就要带把够用的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You gotta bring enough gun.{\r}
+Dialogue: 0,0:11:28.32,0:11:29.50,duibai,NTP,0000,0000,0000,,点40口径的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}40 caliber.{\r}
+Dialogue: 0,0:11:30.82,0:11:33.57,duibai,NTP,0000,0000,0000,,-这个太棒了  -很不错是吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- This is awesome right here. - Nice, isn't it?{\r}
+Dialogue: 0,0:11:33.89,0:11:35.63,duibai,NTP,0000,0000,0000,,爸  你过来看看\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Dad come check this out.{\r}
+Dialogue: 0,0:11:36.14,0:11:38.56,duibai,NTP,0000,0000,0000,,-我看到了  -过来拿着看\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Yeah I see it.  - Come on take it.{\r}
+Dialogue: 0,0:11:38.57,0:11:39.84,duibai,NTP,0000,0000,0000,,沃尔特  来看看\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Check it out Walt.{\r}
+Dialogue: 0,0:11:41.52,0:11:43.42,duibai,NTP,0000,0000,0000,,不  不  只是有点重\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No no it's just heavy.{\r}
+Dialogue: 0,0:11:43.46,0:11:44.87,duibai,NTP,0000,0000,0000,,所以警察才要男的当\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's why they hire men.{\r}
+Dialogue: 0,0:11:46.84,0:11:48.44,duibai,NTP,0000,0000,0000,,枪不咬人  知道吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's not gonna bite you, all right?{\r}
+Dialogue: 0,0:11:48.44,0:11:50.95,duibai,NTP,0000,0000,0000,,你看起来像拿着一杯热牛奶的基思·理查兹（滚石乐队）\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Looks like Keith Richards with a glass of warm milk.{\r}
+Dialogue: 0,0:11:53.52,0:11:54.08,duibai,NTP,0000,0000,0000,,沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey Walt.{\r}
+Dialogue: 0,0:11:54.09,0:11:55.88,duibai,NTP,0000,0000,0000,,大家都听好了  听好了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Everybody listen up listen up listen up!{\r}
+Dialogue: 0,0:11:55.89,0:11:57.17,duibai,NTP,0000,0000,0000,,我要祝酒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm gonna give a toast.{\r}
+Dialogue: 0,0:11:57.18,0:11:59.65,duibai,NTP,0000,0000,0000,,为我的姐夫祝酒  来吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}A little toast to my brother-in-law. Come here.{\r}
+Dialogue: 0,0:12:00.40,0:12:03.95,duibai,NTP,0000,0000,0000,,沃尔特  你的大脑和威斯康星州一样大\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walt. You got a brain the size of Wisconsin.{\r}
+Dialogue: 0,0:12:04.52,0:12:07.02,duibai,NTP,0000,0000,0000,,不过我们并不是要说你坏话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But we're not gonna hold that against you.{\r}
+Dialogue: 0,0:12:07.57,0:12:09.49,duibai,NTP,0000,0000,0000,,因为你心地善良\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Because your heart's in the right place man.{\r}
+Dialogue: 0,0:12:09.49,0:12:10.94,duibai,NTP,0000,0000,0000,,心地善良\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Your heart's in the right place.{\r}
+Dialogue: 0,0:12:10.94,0:12:12.39,duibai,NTP,0000,0000,0000,,我们爱你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We love you man. We love you.{\r}
+Dialogue: 0,0:12:12.39,0:12:13.99,duibai,NTP,0000,0000,0000,,大家举杯  敬沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Everybody! To Walt!{\r}
+Dialogue: 0,0:12:13.99,0:12:14.90,duibai,NTP,0000,0000,0000,,干杯(墨西哥语)\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Na zdorovje!{\r}
+Dialogue: 0,0:12:14.91,0:12:16.21,duibai,NTP,0000,0000,0000,,干杯(墨西哥语)\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Na zdorovje!{\r}
+Dialogue: 0,0:12:19.79,0:12:21.51,duibai,NTP,0000,0000,0000,,该死  打开第三频道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh shit. Turn on channel 3.{\r}
+Dialogue: 0,0:12:24.24,0:12:26.25,duibai,NTP,0000,0000,0000,,到目前为止我们逮捕了3个人\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}At which point we apprehended three individuals{\r}
+Dialogue: 0,0:12:26.26,0:12:27.96,duibai,NTP,0000,0000,0000,,并已将他们拘留\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And placed them into custody.{\r}
+Dialogue: 0,0:12:28.19,0:12:31.53,duibai,NTP,0000,0000,0000,,我很自豪地说在打击\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm proud to say the outstanding professionalism of{\r}
+Dialogue: 0,0:12:31.63,0:12:34.20,duibai,NTP,0000,0000,0000,,大量的冰毒贩卖案件中\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}My fellow agents at the Albuquerque district office{\r}
+Dialogue: 0,0:12:34.30,0:12:36.02,duibai,NTP,0000,0000,0000,,阿尔布开克分局的同仁们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Resulted in a substantial amount{\r}
+Dialogue: 0,0:12:36.12,0:12:38.46,duibai,NTP,0000,0000,0000,,表现了杰出的敬业精神\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Of methamphetamine being taken off the streets.{\r}
+Dialogue: 0,0:12:38.59,0:12:39.84,duibai,NTP,0000,0000,0000,,有发生交火吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Were any shots fired?{\r}
+Dialogue: 0,0:12:40.11,0:12:42.71,duibai,NTP,0000,0000,0000,,没有  我们的探员给嫌疑犯来了个出其不意\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No ma'am. Our agents took the suspects by surprise.{\r}
+Dialogue: 0,0:12:42.83,0:12:45.37,duibai,NTP,0000,0000,0000,,电视还真他妈让你看起来变胖了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Damn the TV does add ten pounds.{\r}
+Dialogue: 0,0:12:45.72,0:12:47.09,duibai,NTP,0000,0000,0000,,加油添醋\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ten pounds?{\r}
+Dialogue: 0,0:12:47.10,0:12:49.60,duibai,NTP,0000,0000,0000,,你们两个  给我闭嘴坐下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Sit and spin. Both of you.{\r}
+Dialogue: 0,0:12:49.62,0:12:51.26,duibai,NTP,0000,0000,0000,,-汉克  -什么事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Hank. - What?{\r}
+Dialogue: 0,0:12:52.68,0:12:54.45,duibai,NTP,0000,0000,0000,,不好意思  当作没看见这个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Sorry. You didn't see that.{\r}
+Dialogue: 0,0:12:55.41,0:12:56.71,duibai,NTP,0000,0000,0000,,太诱人了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So charming.{\r}
+Dialogue: 0,0:12:56.77,0:12:58.84,duibai,NTP,0000,0000,0000,,显然这是一个正在运行的组织\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is clearly an ongoing operation one{\r}
+Dialogue: 0,0:12:58.86,0:13:00.96,duibai,NTP,0000,0000,0000,,而且安排得当\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Which was well organized{\r}
+Dialogue: 0,0:13:00.96,0:13:02.18,duibai,NTP,0000,0000,0000,,汉克  一共多少钱\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hank, how much money is that?{\r}
+Dialogue: 0,0:13:02.39,0:13:04.73,duibai,NTP,0000,0000,0000,,大概有70万  很多吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's about 700 grand. That's a pretty good haul huh?{\r}
+Dialogue: 0,0:13:05.05,0:13:08.16,duibai,NTP,0000,0000,0000,,正如我说的  今天是阿尔布开克市民的好日子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}As I say it's a good day for the citizens of Albuquerque{\r}
+Dialogue: 0,0:13:08.16,0:13:11.15,duibai,NTP,0000,0000,0000,,因为我们给予当地毒品交易沉重打击\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}When we can put this big a dent in the local drug trade.{\r}
+Dialogue: 0,0:13:11.25,0:13:14.38,duibai,NTP,0000,0000,0000,,不过有点不正常  那种现金\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But that's unusual, isn't it? That kind of cash?{\r}
+Dialogue: 0,0:13:14.90,0:13:16.70,duibai,NTP,0000,0000,0000,,和我们之前破的大部分案子不同\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well it's not the most we ever took.{\r}
+Dialogue: 0,0:13:16.73,0:13:18.04,duibai,NTP,0000,0000,0000,,这钱来得很快\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's easy money{\r}
+Dialogue: 0,0:13:18.05,0:13:19.69,duibai,NTP,0000,0000,0000,,被我们抓到就完了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Until we catch you.{\r}
+Dialogue: 0,0:13:20.37,0:13:22.81,duibai,NTP,0000,0000,0000,,沃尔特只要你开口  我就带你去跟踪\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walt just say the word and I'll take you on a ride-along.{\r}
+Dialogue: 0,0:13:23.18,0:13:25.44,duibai,NTP,0000,0000,0000,,你可以亲眼目睹我们如何捣毁冰毒实验室\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You can watch us knock down a meth lab.{\r}
+Dialogue: 0,0:13:25.68,0:13:27.60,duibai,NTP,0000,0000,0000,,给你的生活增加点激情\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Get a little excitement in your life.{\r}
+Dialogue: 0,0:13:28.37,0:13:29.72,duibai,NTP,0000,0000,0000,,是啊  有一天\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, someday.{\r}
+Dialogue: 0,0:13:39.61,0:13:40.93,duibai,NTP,0000,0000,0000,,又是什么呀\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Which one's this?{\r}
+Dialogue: 0,0:13:41.00,0:13:43.21,duibai,NTP,0000,0000,0000,,就是我在超级交换网上买的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Um, that faux-lalique vase{\r}
+Dialogue: 0,0:13:43.21,0:13:45.12,duibai,NTP,0000,0000,0000,,人造水晶花瓶\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I picked up at the Super-Swap.{\r}
+Dialogue: 0,0:13:50.90,0:13:51.91,duibai,NTP,0000,0000,0000,,怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How's it doing?{\r}
+Dialogue: 0,0:13:51.91,0:13:53.65,duibai,NTP,0000,0000,0000,,我已经预定了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well, I met my reserve{\r}
+Dialogue: 0,0:13:53.65,0:13:55.47,duibai,NTP,0000,0000,0000,,还有两分钟开拍\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}and there's still two minutes.{\r}
+Dialogue: 0,0:14:03.42,0:14:04.58,duibai,NTP,0000,0000,0000,,什么事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What's up?{\r}
+Dialogue: 0,0:14:05.21,0:14:07.03,duibai,NTP,0000,0000,0000,,你说呢  小寿星\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You tell me, birthday boy.{\r}
+Dialogue: 0,0:14:10.10,0:14:12.07,duibai,NTP,0000,0000,0000,,那你  周六有什么安排\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh, hey, so, what's up for Saturday?{\r}
+Dialogue: 0,0:14:13.38,0:14:14.69,duibai,NTP,0000,0000,0000,,洗车\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mm. Car wash.{\r}
+Dialogue: 0,0:14:14.97,0:14:16.49,duibai,NTP,0000,0000,0000,,博格丹说需要我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Bogdan says he needs me.{\r}
+Dialogue: 0,0:14:16.49,0:14:18.36,duibai,NTP,0000,0000,0000,,几点结束  中午  一点钟\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Till what time? Noon, 1 -ish?{\r}
+Dialogue: 0,0:14:18.36,0:14:20.41,duibai,NTP,0000,0000,0000,,大概两点吧  差不多\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Probably 2, more like it.{\r}
+Dialogue: 0,0:14:21.08,0:14:22.61,duibai,NTP,0000,0000,0000,,那之后呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And then what after that?{\r}
+Dialogue: 0,0:14:24.28,0:14:28.40,duibai,NTP,0000,0000,0000,,其实呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Um, actually,{\r}
+Dialogue: 0,0:14:28.40,0:14:32.21,duibai,NTP,0000,0000,0000,,我打算开车去洛斯阿拉莫斯\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I was thinking of driving up to Los Alamos.{\r}
+Dialogue: 0,0:14:32.21,0:14:34.28,duibai,NTP,0000,0000,0000,,那有一个  游客中心举办展览\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They've got this The visitor center has an exhibit on{\r}
+Dialogue: 0,0:14:34.88,0:14:35.87,duibai,NTP,0000,0000,0000,,应该会很\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}that's really supposed to be{\r}
+Dialogue: 0,0:14:35.87,0:14:37.24,duibai,NTP,0000,0000,0000,,你不粉刷吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're not gonna paint?{\r}
+Dialogue: 0,0:14:37.30,0:14:38.05,duibai,NTP,0000,0000,0000,,刷  我会刷的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, I'll paint.{\r}
+Dialogue: 0,0:14:39.74,0:14:41.92,duibai,NTP,0000,0000,0000,,只是这个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just that this{\r}
+Dialogue: 0,0:14:41.99,0:14:46.87,duibai,NTP,0000,0000,0000,,展出的是火星探测器的照片\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know, this exhibition on the Mars-rover photographs are{\r}
+Dialogue: 0,0:14:48.03,0:14:51.71,duibai,NTP,0000,0000,0000,,我是说  细节一定相当清晰\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean, the detail really is just supposed to be amazing.{\r}
+Dialogue: 0,0:14:51.78,0:14:53.88,duibai,NTP,0000,0000,0000,,我真的需要你能把漆刷完\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just that I really need you to paint at some point.{\r}
+Dialogue: 0,0:14:53.88,0:14:57.12,duibai,NTP,0000,0000,0000,,-卧室早一天准备好  -我知道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- The sooner that back bedroom gets finished - I know.{\r}
+Dialogue: 0,0:14:57.52,0:14:58.75,duibai,NTP,0000,0000,0000,,我可以自己刷的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And I'd do it myself,{\r}
+Dialogue: 0,0:14:58.75,0:15:01.60,duibai,NTP,0000,0000,0000,,只是你说不愿意让我上梯子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}except you said you don't want me standing on the stepladder.{\r}
+Dialogue: 0,0:15:01.60,0:15:02.68,duibai,NTP,0000,0000,0000,,-我会刷的  -好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- I will paint. -Okay.{\r}
+Dialogue: 0,0:15:06.54,0:15:08.61,duibai,NTP,0000,0000,0000,,这是怎么回事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What is going on down there?{\r}
+Dialogue: 0,0:15:09.38,0:15:11.15,duibai,NTP,0000,0000,0000,,没事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, it's{\r}
+Dialogue: 0,0:15:11.70,0:15:12.79,duibai,NTP,0000,0000,0000,,他睡着了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Is he asleep?{\r}
+Dialogue: 0,0:15:13.43,0:15:15.35,duibai,NTP,0000,0000,0000,,不是  没问题  他只是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, it's No, it's nothing. He's just{\r}
+Dialogue: 0,0:15:17.50,0:15:19.34,duibai,NTP,0000,0000,0000,,我说  你该小心点孩子  还有\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know. Well, you gotta be careful about the baby and{\r}
+Dialogue: 0,0:15:19.43,0:15:20.55,duibai,NTP,0000,0000,0000,,不用担心孩子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well, don't worry about the baby.{\r}
+Dialogue: 0,0:15:20.68,0:15:21.90,duibai,NTP,0000,0000,0000,,这是专门为你的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is just for you.{\r}
+Dialogue: 0,0:15:22.26,0:15:25.86,duibai,NTP,0000,0000,0000,,我们今天只弄你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We are just doing you tonight.{\r}
+Dialogue: 0,0:15:26.88,0:15:28.92,duibai,NTP,0000,0000,0000,,所以呢  你就闭上眼睛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So just close your eyes,{\r}
+Dialogue: 0,0:15:29.54,0:15:32.23,duibai,NTP,0000,0000,0000,,放松  顺其自然\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}relax, and let it{\r}
+Dialogue: 0,0:15:35.22,0:15:37.45,duibai,NTP,0000,0000,0000,,-闭上眼睛  -哦  好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Close your eyes. - Oh, okay.{\r}
+Dialogue: 0,0:15:41.98,0:15:43.15,duibai,NTP,0000,0000,0000,,好了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay.{\r}
+Dialogue: 0,0:15:43.70,0:15:45.02,duibai,NTP,0000,0000,0000,,就这样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There you go.{\r}
+Dialogue: 0,0:15:45.77,0:15:47.47,duibai,NTP,0000,0000,0000,,对了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's it.{\r}
+Dialogue: 0,0:15:48.20,0:15:50.34,duibai,NTP,0000,0000,0000,,就这样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There you go.{\r}
+Dialogue: 0,0:15:50.96,0:15:52.67,duibai,NTP,0000,0000,0000,,继续\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Keep it going.{\r}
+Dialogue: 0,0:15:53.16,0:15:54.79,duibai,NTP,0000,0000,0000,,继续\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Keep it going.{\r}
+Dialogue: 0,0:15:55.73,0:15:57.94,duibai,NTP,0000,0000,0000,,继续\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Keep it going.{\r}
+Dialogue: 0,0:15:58.88,0:16:01.07,duibai,NTP,0000,0000,0000,,继  太好了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Keep Yes!{\r}
+Dialogue: 0,0:16:01.13,0:16:03.49,duibai,NTP,0000,0000,0000,,五十六耶\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fifty-six. Oh.{\r}
+Dialogue: 0,0:16:54.25,0:16:55.40,duibai,NTP,0000,0000,0000,,这真是太尴尬了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is so embarrassing.{\r}
+Dialogue: 0,0:16:55.52,0:16:57.22,duibai,NTP,0000,0000,0000,,老实说  我没事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I am fine, honestly.{\r}
+Dialogue: 0,0:16:58.15,0:17:00.17,duibai,NTP,0000,0000,0000,,不过是轻微传染\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just some bug going around.{\r}
+Dialogue: 0,0:17:00.17,0:17:03.46,duibai,NTP,0000,0000,0000,,先是我妻子  我儿子  现在我又染上了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}First, my wife had it, then my son, and now me.{\r}
+Dialogue: 0,0:17:03.46,0:17:06.49,duibai,NTP,0000,0000,0000,,只是  有一点胸痛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just It's just like a chest cold.{\r}
+Dialogue: 0,0:17:07.28,0:17:09.17,duibai,NTP,0000,0000,0000,,可能还有点低血糖\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Could be some low blood sugar as well.{\r}
+Dialogue: 0,0:17:09.17,0:17:11.04,duibai,NTP,0000,0000,0000,,我今天早饭吃得不是特别好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I didn't have the greatest breakfast this morning. Honestly, I didn't.{\r}
+Dialogue: 0,0:17:12.69,0:17:13.84,duibai,NTP,0000,0000,0000,,听我说  能帮个忙吗  可不可以\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey, listen, can you do me a favor? Can you just, uh,{\r}
+Dialogue: 0,0:17:13.84,0:17:17.97,duibai,NTP,0000,0000,0000,,拐弯的时候让我下车\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}drop me off at a corner somewhere?{\r}
+Dialogue: 0,0:17:18.77,0:17:21.12,duibai,NTP,0000,0000,0000,,抱歉  不行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Uh, no, sorry.{\r}
+Dialogue: 0,0:17:22.12,0:17:24.39,duibai,NTP,0000,0000,0000,,我的保险真的不特别好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just that I don't have the greatest insurance.{\r}
+Dialogue: 0,0:17:24.39,0:17:26.21,duibai,NTP,0000,0000,0000,,请你深呼吸几下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Take a couple of deep breaths for me.{\r}
+Dialogue: 0,0:17:32.89,0:17:35.07,duibai,NTP,0000,0000,0000,,要我们帮你联系什么人吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Is there anybody you want us to contact for you?{\r}
+Dialogue: 0,0:17:36.24,0:17:37.46,duibai,NTP,0000,0000,0000,,不  天哪  不用\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ha. No. God, no.{\r}
+Dialogue: 0,0:17:37.94,0:17:39.26,duibai,NTP,0000,0000,0000,,请你坐起来一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Lean forward for me, would you?{\r}
+Dialogue: 0,0:17:42.94,0:17:44.67,duibai,NTP,0000,0000,0000,,怀特先生  你吸烟吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mr. White, are you a smoker?{\r}
+Dialogue: 0,0:17:44.78,0:17:46.95,duibai,NTP,0000,0000,0000,,不吸  从不\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, never.{\r}
+Dialogue: 0,0:17:49.23,0:17:50.31,duibai,NTP,0000,0000,0000,,为什么问这个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Why do you ask?{\r}
+Dialogue: 0,0:18:30.18,0:18:31.18,duibai,NTP,0000,0000,0000,,怀特先生\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mr. White.{\r}
+Dialogue: 0,0:18:32.86,0:18:34.15,duibai,NTP,0000,0000,0000,,怀特先生\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mr. white?{\r}
+Dialogue: 0,0:18:35.95,0:18:36.89,duibai,NTP,0000,0000,0000,,你说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yes.{\r}
+Dialogue: 0,0:18:38.28,0:18:40.76,duibai,NTP,0000,0000,0000,,我刚说的你都明白了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You understood what I've just said to you?{\r}
+Dialogue: 0,0:18:41.08,0:18:41.87,duibai,NTP,0000,0000,0000,,明白\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yes.{\r}
+Dialogue: 0,0:18:42.54,0:18:45.04,duibai,NTP,0000,0000,0000,,肺癌  而且不能动手术\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Lung cancer. Inoperable.{\r}
+Dialogue: 0,0:18:47.57,0:18:48.77,duibai,NTP,0000,0000,0000,,不好意思\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm sorry{\r}
+Dialogue: 0,0:18:49.16,0:18:52.10,duibai,NTP,0000,0000,0000,,我需要确保你真的明白了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I just need to make sure you fully understand.{\r}
+Dialogue: 0,0:18:52.96,0:18:55.19,duibai,NTP,0000,0000,0000,,最佳治疗方案是化疗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Best-case scenario with chemo.{\r}
+Dialogue: 0,0:18:55.43,0:18:57.92,duibai,NTP,0000,0000,0000,,这样我或许还能多活几年\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'll live maybe another couple years.{\r}
+Dialogue: 0,0:19:00.38,0:19:01.59,duibai,NTP,0000,0000,0000,,只是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's just{\r}
+Dialogue: 0,0:19:02.42,0:19:05.62,duibai,NTP,0000,0000,0000,,你的衣领上有芥末\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You've got mustard on your{\r}
+Dialogue: 0,0:19:06.93,0:19:09.39,duibai,NTP,0000,0000,0000,,就那儿  沾着芥末\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Right there. Mustard there.{\r}
+Dialogue: 0,0:19:09.79,0:19:10.79,duibai,NTP,0000,0000,0000,,就那儿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Right there.{\r}
+Dialogue: 0,0:19:20.68,0:19:23.06,duibai,NTP,0000,0000,0000,,我的记录显示已经付过了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So my records show that I paid it{\r}
+Dialogue: 0,0:19:23.06,0:19:24.85,duibai,NTP,0000,0000,0000,,而且我确定我们最近没有欠款\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}and I certainly don't feel that we owe any late{\r}
+Dialogue: 0,0:19:25.94,0:19:26.93,duibai,NTP,0000,0000,0000,,好  好吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, all right. Um{\r}
+Dialogue: 0,0:19:27.76,0:19:29.68,duibai,NTP,0000,0000,0000,,我会跟银行确认\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well I'll check with the bank{\r}
+Dialogue: 0,0:19:29.72,0:19:31.51,duibai,NTP,0000,0000,0000,,还有邮局\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And maybe the post office{\r}
+Dialogue: 0,0:19:31.52,0:19:33.31,duibai,NTP,0000,0000,0000,,看看他们是否有弄丢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}If they lost it or something.{\r}
+Dialogue: 0,0:19:33.67,0:19:35.41,duibai,NTP,0000,0000,0000,,好的  我再确认一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, let me look into that.{\r}
+Dialogue: 0,0:19:35.68,0:19:36.57,duibai,NTP,0000,0000,0000,,好的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay.{\r}
+Dialogue: 0,0:19:37.22,0:19:38.17,duibai,NTP,0000,0000,0000,,谢谢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Thank you.{\r}
+Dialogue: 0,0:19:47.17,0:19:49.59,duibai,NTP,0000,0000,0000,,上个月你用万事达卡了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Did you use the mastercard last month?{\r}
+Dialogue: 0,0:19:50.58,0:19:52.60,duibai,NTP,0000,0000,0000,,在斯特普尔斯公司[办公用品连锁]花了15块88\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}15.88 at Staples?{\r}
+Dialogue: 0,0:19:59.57,0:20:01.48,duibai,NTP,0000,0000,0000,,要买些打印纸\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We needed printer paper.{\r}
+Dialogue: 0,0:20:02.22,0:20:04.98,duibai,NTP,0000,0000,0000,,沃尔特  我们不用万事达卡的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walt, the mastercard's the one we don't use.{\r}
+Dialogue: 0,0:20:06.38,0:20:07.22,duibai,NTP,0000,0000,0000,,好吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay.{\r}
+Dialogue: 0,0:20:08.42,0:20:10.32,duibai,NTP,0000,0000,0000,,今天过怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So how was your day?{\r}
+Dialogue: 0,0:20:15.65,0:20:17.68,duibai,NTP,0000,0000,0000,,不知道  我想\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't know. It was um{\r}
+Dialogue: 0,0:20:19.85,0:20:21.28,duibai,NTP,0000,0000,0000,,还不错\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fine.{\r}
+Dialogue: 0,0:20:53.11,0:20:55.41,duibai,NTP,0000,0000,0000,,沃尔特  我缺人手\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walt, come on. I'm shorthanded.{\r}
+Dialogue: 0,0:20:55.41,0:20:57.41,duibai,NTP,0000,0000,0000,,你帮忙去擦车  快点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I need you to do some wipe-downs. Come on.{\r}
+Dialogue: 0,0:20:57.56,0:21:00.49,duibai,NTP,0000,0000,0000,,-什么  -我叫你到外面去擦车\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- What?  - I said I need you outside to do some wipe-downs.{\r}
+Dialogue: 0,0:21:00.49,0:21:02.79,duibai,NTP,0000,0000,0000,,你是来工作还是来发呆的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Are you here to work or to be staring at the skies?{\r}
+Dialogue: 0,0:21:02.79,0:21:04.06,duibai,NTP,0000,0000,0000,,快点走吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Come on let's go.{\r}
+Dialogue: 0,0:21:06.59,0:21:07.50,duibai,NTP,0000,0000,0000,,快点伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Come on man.{\r}
+Dialogue: 0,0:21:08.24,0:21:10.37,duibai,NTP,0000,0000,0000,,博格丹  去你妈的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fuck you Bogdan.{\r}
+Dialogue: 0,0:21:10.39,0:21:12.25,duibai,NTP,0000,0000,0000,,我说去你妈的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I said fuck you!{\r}
+Dialogue: 0,0:21:12.74,0:21:14.22,duibai,NTP,0000,0000,0000,,还有你那眉毛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And your eyebrows!{\r}
+Dialogue: 0,0:21:18.43,0:21:19.77,duibai,NTP,0000,0000,0000,,用这个擦吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Wipe down this!{\r}
+Dialogue: 0,0:22:21.44,0:22:22.53,duibai,NTP,0000,0000,0000,,汉克\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Uh Hank.{\r}
+Dialogue: 0,0:22:22.91,0:22:24.58,duibai,NTP,0000,0000,0000,,汉克  是我  沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hank, it's Walt. Hey.{\r}
+Dialogue: 0,0:22:24.91,0:22:27.10,duibai,NTP,0000,0000,0000,,听着  没吵醒你吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh listen I didn't wake you did I?{\r}
+Dialogue: 0,0:22:27.66,0:22:28.98,duibai,NTP,0000,0000,0000,,好的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh good good.{\r}
+Dialogue: 0,0:22:30.10,0:22:32.68,duibai,NTP,0000,0000,0000,,不  不  没什么事  只是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No no nothing's wrong. I just uh{\r}
+Dialogue: 0,0:22:34.22,0:22:36.93,duibai,NTP,0000,0000,0000,,我一直在考虑那个提议\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I've been uh thinking about that offer{\r}
+Dialogue: 0,0:22:37.94,0:22:39.30,duibai,NTP,0000,0000,0000,,跟你们一起行动\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That ride-along.{\r}
+Dialogue: 0,0:22:41.00,0:22:43.07,duibai,NTP,0000,0000,0000,,右侧最后一幢房子  看到了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's the last house on the right. See it?{\r}
+Dialogue: 0,0:22:43.18,0:22:45.04,duibai,NTP,0000,0000,0000,,不是二层的  旁边那幢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Not the two-story one, the one next to it.{\r}
+Dialogue: 0,0:22:45.12,0:22:48.40,duibai,NTP,0000,0000,0000,,有点儿那个  什么颜色来着\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Kind of, uh, I don't know what do you call that? Um,{\r}
+Dialogue: 0,0:22:48.40,0:22:50.30,duibai,NTP,0000,0000,0000,,-绿色  -鼠尾草色\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- green? - Sage.{\r}
+Dialogue: 0,0:22:51.48,0:22:52.47,duibai,NTP,0000,0000,0000,,"鼠尾草色"\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}"Sage?"{\r}
+Dialogue: 0,0:22:52.98,0:22:55.07,duibai,NTP,0000,0000,0000,,你他妈是陶器场出来的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Do you work at the fucking Pottery Barn? Jesus.{\r}
+Dialogue: 0,0:22:55.15,0:22:57.21,duibai,NTP,0000,0000,0000,,人家就叫鼠尾草色\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Sage. That's the word for it.{\r}
+Dialogue: 0,0:22:57.77,0:23:00.41,duibai,NTP,0000,0000,0000,,你个傻缺就认得"绿"  这也怪我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}My fault the only word your dumb ass knows is "green"?{\r}
+Dialogue: 0,0:23:00.50,0:23:03.08,duibai,NTP,0000,0000,0000,,我还认得"贱货"  这词怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}"Cheese-dick." I know that one. How about that?{\r}
+Dialogue: 0,0:23:04.72,0:23:07.28,duibai,NTP,0000,0000,0000,,总之  就是鼠尾草色那幢  看到了吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Anyway, it's the, um, sage one. See it?{\r}
+Dialogue: 0,0:23:07.34,0:23:09.56,duibai,NTP,0000,0000,0000,,你们怎么知道那是个制毒窝点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So what tells you it's a meth lab?{\r}
+Dialogue: 0,0:23:09.74,0:23:12.45,duibai,NTP,0000,0000,0000,,据可靠线人报告\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Star snitch says some dude{\r}
+Dialogue: 0,0:23:12.48,0:23:16.00,duibai,NTP,0000,0000,0000,,一个名叫"库克船长"的家伙在里面制毒呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Goes by cap'n Cook lives up to his name in there.{\r}
+Dialogue: 0,0:23:16.05,0:23:19.11,duibai,NTP,0000,0000,0000,,还总往里面掺胡椒粉\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Says he always adds a dash of chili powder.{\r}
+Dialogue: 0,0:23:20.28,0:23:22.67,duibai,NTP,0000,0000,0000,,这群精力旺盛的老墨\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ah you exuberant mexicans.{\r}
+Dialogue: 0,0:23:23.30,0:23:25.44,duibai,NTP,0000,0000,0000,,"库克船长"是个白人名字\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Captain Cook that's a white boy's name.{\r}
+Dialogue: 0,0:23:25.59,0:23:26.89,duibai,NTP,0000,0000,0000,,"呆瓜"也是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Dopey as hell too.{\r}
+Dialogue: 0,0:23:26.92,0:23:28.68,duibai,NTP,0000,0000,0000,,是吗  这么着\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah? Tell you what.{\r}
+Dialogue: 0,0:23:29.33,0:23:31.56,duibai,NTP,0000,0000,0000,,我赌20块猜他是个老墨\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I got 20 bucks that says he's a beaner.{\r}
+Dialogue: 0,0:23:31.64,0:23:33.37,duibai,NTP,0000,0000,0000,,-好的  -说定了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- All right.  - You're on.{\r}
+Dialogue: 0,0:23:35.61,0:23:37.36,duibai,NTP,0000,0000,0000,,快点  快点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}All right come on come on.{\r}
+Dialogue: 0,0:23:42.33,0:23:44.97,duibai,NTP,0000,0000,0000,,好了  校车安全经过  开始行动\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}All right. School bus is clear. Got the green light.{\r}
+Dialogue: 0,0:23:44.97,0:23:45.93,duibai,NTP,0000,0000,0000,,收到\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Copy that.{\r}
+Dialogue: 0,0:23:54.29,0:23:56.52,duibai,NTP,0000,0000,0000,,看我们怎么收拾他们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Watch this.  Makes them shit.{\r}
+Dialogue: 0,0:24:00.49,0:24:02.43,duibai,NTP,0000,0000,0000,,上上上\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Go go go.{\r}
+Dialogue: 0,0:24:12.14,0:24:13.69,duibai,NTP,0000,0000,0000,,制毒窝点在天气好时尤其危险\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Meth labs are nasty on a good day.{\r}
+Dialogue: 0,0:24:13.74,0:24:16.63,duibai,NTP,0000,0000,0000,,一旦混合错误就会产生芥子气\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You mix that wrong you got mustard gas.{\r}
+Dialogue: 0,0:24:16.63,0:24:17.75,duibai,NTP,0000,0000,0000,,应该是磷化氢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Phosphine gas.{\r}
+Dialogue: 0,0:24:19.40,0:24:20.34,duibai,NTP,0000,0000,0000,,我觉得是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I think.{\r}
+Dialogue: 0,0:24:20.35,0:24:21.46,duibai,NTP,0000,0000,0000,,当然没错\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah exactly.{\r}
+Dialogue: 0,0:24:21.77,0:24:24.45,duibai,NTP,0000,0000,0000,,吸一口就会丧命  所以要戴面罩\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}One whiff will kill you. That's why the respirators.{\r}
+Dialogue: 0,0:25:12.91,0:25:15.15,duibai,NTP,0000,0000,0000,,房子搜查完毕  拘捕一名嫌犯\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}House is clear. One suspect in custody.{\r}
+Dialogue: 0,0:25:15.16,0:25:16.02,duibai,NTP,0000,0000,0000,,收到\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Copy that.{\r}
+Dialogue: 0,0:25:16.67,0:25:19.79,duibai,NTP,0000,0000,0000,,嫌犯会是拉美裔的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The suspect might he be of the latino persuasion?{\r}
+Dialogue: 0,0:25:20.12,0:25:22.78,duibai,NTP,0000,0000,0000,,驾照上的名字是埃米利奥·小山\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Driver's license says Emilio Koyama.{\r}
+Dialogue: 0,0:25:23.33,0:25:24.27,duibai,NTP,0000,0000,0000,,亚裔的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Asian!{\r}
+Dialogue: 0,0:25:24.27,0:25:25.53,duibai,NTP,0000,0000,0000,,给钱吧  蠢货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Pay up sucker.{\r}
+Dialogue: 0,0:25:25.97,0:25:27.47,duibai,NTP,0000,0000,0000,,名字是埃米利奥\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}First name Emilio.{\r}
+Dialogue: 0,0:25:27.79,0:25:29.36,duibai,NTP,0000,0000,0000,,说明至少有一半墨西哥血统\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's at least half a beaner.{\r}
+Dialogue: 0,0:25:29.60,0:25:31.62,duibai,NTP,0000,0000,0000,,这么着吧  算你10块好了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Tell you what, I'll let you off for a 10.{\r}
+Dialogue: 0,0:25:33.94,0:25:36.34,duibai,NTP,0000,0000,0000,,打起精神吧  傻瓜  你们不是还有詹妮弗·洛佩兹嘛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Cheer up gomey. You people still got J.lo.{\r}
+Dialogue: 0,0:25:36.59,0:25:40.20,duibai,NTP,0000,0000,0000,,汉克  我能进去看看吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hank, do you think I might get to go inside?{\r}
+Dialogue: 0,0:25:40.63,0:25:42.06,duibai,NTP,0000,0000,0000,,看看制毒窝点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}See the actual lab?{\r}
+Dialogue: 0,0:25:46.66,0:25:48.46,duibai,NTP,0000,0000,0000,,可以  跟你说吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah. Yeah I tell you what{\r}
+Dialogue: 0,0:25:48.46,0:25:49.63,duibai,NTP,0000,0000,0000,,我们要先进去\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We're gonna go peek our heads in{\r}
+Dialogue: 0,0:25:49.66,0:25:51.18,duibai,NTP,0000,0000,0000,,仔细检查下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Check it out first.{\r}
+Dialogue: 0,0:25:52.11,0:25:53.38,duibai,NTP,0000,0000,0000,,你稍等一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Stay here a minute.{\r}
+Dialogue: 0,0:26:25.10,0:26:25.85,duibai,NTP,0000,0000,0000,,天哪\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}God.{\r}
+Dialogue: 0,0:26:33.33,0:26:34.44,duibai,NTP,0000,0000,0000,,天哪\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh my god.{\r}
+Dialogue: 0,0:26:36.80,0:26:37.70,duibai,NTP,0000,0000,0000,,平克曼\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Pinkman?{\r}
+Dialogue: 0,0:26:53.14,0:26:54.24,yingzimu,NTP,0000,0000,0000,,{\fs26\fn黑体\pos(190,210)\1c&H010133&}船   长
+Dialogue: 0,0:27:35.74,0:27:36.60,duibai,NTP,0000,0000,0000,,是我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's me.{\r}
+Dialogue: 0,0:27:36.85,0:27:38.01,duibai,NTP,0000,0000,0000,,就我一个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm alone.{\r}
+Dialogue: 0,0:27:44.56,0:27:45.96,duibai,NTP,0000,0000,0000,,你是怎么找到我的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How'd you find me?{\r}
+Dialogue: 0,0:27:46.31,0:27:48.58,duibai,NTP,0000,0000,0000,,你还在我们的资料库里面\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're still in our filing system.{\r}
+Dialogue: 0,0:27:51.86,0:27:54.59,duibai,NTP,0000,0000,0000,,这地方是你阿姨的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So your aunt owns this place right?{\r}
+Dialogue: 0,0:27:55.49,0:27:56.60,duibai,NTP,0000,0000,0000,,是我的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I own it.{\r}
+Dialogue: 0,0:28:00.09,0:28:01.76,duibai,NTP,0000,0000,0000,,没人在找你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No one's looking for you.{\r}
+Dialogue: 0,0:28:01.90,0:28:03.17,duibai,NTP,0000,0000,0000,,你来这干什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Why are you here?{\r}
+Dialogue: 0,0:28:03.94,0:28:05.77,duibai,NTP,0000,0000,0000,,我很好奇\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I was curious.{\r}
+Dialogue: 0,0:28:06.82,0:28:09.27,duibai,NTP,0000,0000,0000,,事实上我没期待你有什么作为\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Honestly I never expected you to amount too much{\r}
+Dialogue: 0,0:28:09.27,0:28:11.15,duibai,NTP,0000,0000,0000,,但是甲基安非他明\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}but methamphetamine?{\r}
+Dialogue: 0,0:28:12.49,0:28:15.34,duibai,NTP,0000,0000,0000,,我万万没有想到\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I didn't picture that.{\r}
+Dialogue: 0,0:28:17.28,0:28:18.87,duibai,NTP,0000,0000,0000,,这个能赚很多钱吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}There's a lot of money in it huh?{\r}
+Dialogue: 0,0:28:19.41,0:28:21.10,duibai,NTP,0000,0000,0000,,我不知道你在说什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't know what you're talking about.{\r}
+Dialogue: 0,0:28:21.21,0:28:22.79,duibai,NTP,0000,0000,0000,,-真的  -一点不明白\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- No?  - Not a clue.{\r}
+Dialogue: 0,0:28:24.84,0:28:25.90,duibai,NTP,0000,0000,0000,,库克船长\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Captain Cook?{\r}
+Dialogue: 0,0:28:27.15,0:28:28.40,duibai,NTP,0000,0000,0000,,不是你吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's not you?{\r}
+Dialogue: 0,0:28:34.96,0:28:36.93,duibai,NTP,0000,0000,0000,,我说了  没人在找你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Like I said no one is looking for you.{\r}
+Dialogue: 0,0:28:36.96,0:28:38.89,duibai,NTP,0000,0000,0000,,听着  我不知道你来这儿干嘛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Look I don't know what you think doing here.{\r}
+Dialogue: 0,0:28:39.51,0:28:41.09,duibai,NTP,0000,0000,0000,,怀特老师\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mr. White{\r}
+Dialogue: 0,0:28:41.39,0:28:44.52,duibai,NTP,0000,0000,0000,,如果你想拿上帝那套狗屎说辞\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean if you're planning on giving me some bowl winder{\r}
+Dialogue: 0,0:28:44.52,0:28:47.47,duibai,NTP,0000,0000,0000,,劝我去自首的话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}About getting right with jesus by turning myself in{\r}
+Dialogue: 0,0:28:47.48,0:28:50.20,duibai,NTP,0000,0000,0000,,-我不会的  -高中已经是很久远的事情了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Not really.  - High school was a long time ago.{\r}
+Dialogue: 0,0:28:50.31,0:28:53.14,duibai,NTP,0000,0000,0000,,你又不是什么灵魂工程师  赶紧滚吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You ain't welcome back kotter, so step off.{\r}
+Dialogue: 0,0:28:53.26,0:28:54.60,duibai,NTP,0000,0000,0000,,少说废话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No speeches.{\r}
+Dialogue: 0,0:28:55.06,0:28:56.28,duibai,NTP,0000,0000,0000,,就说几句\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Short speech.{\r}
+Dialogue: 0,0:28:57.23,0:29:00.02,duibai,NTP,0000,0000,0000,,你今天被抓的的那个同伙叫什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You lost your partner today. What's his name?{\r}
+Dialogue: 0,0:29:01.55,0:29:02.56,duibai,NTP,0000,0000,0000,,埃米利奥\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Emilio?{\r}
+Dialogue: 0,0:29:04.07,0:29:06.07,duibai,NTP,0000,0000,0000,,埃米利奥就要去蹲大狱了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Emilio is going to prison.{\r}
+Dialogue: 0,0:29:07.91,0:29:10.76,duibai,NTP,0000,0000,0000,,毒品缉查局抄了你的窝还有钱\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The DEA took all your money your lab.{\r}
+Dialogue: 0,0:29:12.99,0:29:14.35,duibai,NTP,0000,0000,0000,,你一无所有了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You got nothing.{\r}
+Dialogue: 0,0:29:14.62,0:29:15.86,duibai,NTP,0000,0000,0000,,话说回来\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Square 1.{\r}
+Dialogue: 0,0:29:17.14,0:29:19.05,duibai,NTP,0000,0000,0000,,你懂得怎么贩毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But you know the business.{\r}
+Dialogue: 0,0:29:20.16,0:29:22.03,duibai,NTP,0000,0000,0000,,而我掌握着化学技术\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And I know the chemistry.{\r}
+Dialogue: 0,0:29:25.80,0:29:27.16,duibai,NTP,0000,0000,0000,,我在想\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm thinking{\r}
+Dialogue: 0,0:29:27.97,0:29:30.17,duibai,NTP,0000,0000,0000,,或许我们可以合作\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Maybe you and I could partner up.{\r}
+Dialogue: 0,0:29:41.80,0:29:45.05,duibai,NTP,0000,0000,0000,,你想制造冰毒吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You want to cook crystal meth?{\r}
+Dialogue: 0,0:29:46.82,0:29:47.42,duibai,NTP,0000,0000,0000,,就凭你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You?{\r}
+Dialogue: 0,0:29:47.92,0:29:50.47,duibai,NTP,0000,0000,0000,,你和我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You and uh and me?{\r}
+Dialogue: 0,0:29:51.85,0:29:52.90,duibai,NTP,0000,0000,0000,,没错\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's right.{\r}
+Dialogue: 0,0:29:56.02,0:29:57.13,duibai,NTP,0000,0000,0000,,要么答应我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Either that{\r}
+Dialogue: 0,0:29:58.17,0:29:59.68,duibai,NTP,0000,0000,0000,,要么我告发你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Or I turn you in.{\r}
+Dialogue: 0,0:30:10.98,0:30:12.52,duibai,NTP,0000,0000,0000,,这是什么鬼东西\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What the hell is this?{\r}
+Dialogue: 0,0:30:12.59,0:30:13.77,duibai,NTP,0000,0000,0000,,我怎么知道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Damned if I know.{\r}
+Dialogue: 0,0:30:13.85,0:30:16.45,duibai,NTP,0000,0000,0000,,我在描述里写的是马赛克手工艺品\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I described it as mosaic folk art.{\r}
+Dialogue: 0,0:30:16.45,0:30:17.54,duibai,NTP,0000,0000,0000,,这东西居然有人买\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And somebody bought it?{\r}
+Dialogue: 0,0:30:17.54,0:30:18.81,duibai,NTP,0000,0000,0000,,是啊  明尼阿波利斯有个人\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, some guy in Minneapolis.{\r}
+Dialogue: 0,0:30:18.81,0:30:20.40,duibai,NTP,0000,0000,0000,,14美元  不算邮费\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fourteen dollars plus shipping.{\r}
+Dialogue: 0,0:30:20.51,0:30:21.28,duibai,NTP,0000,0000,0000,,真棒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yes.{\r}
+Dialogue: 0,0:30:21.51,0:30:24.72,duibai,NTP,0000,0000,0000,,照这样下去  再过五六十年你就发了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}At this rate, in 50 or 60 years you'll be rich.{\r}
+Dialogue: 0,0:30:25.72,0:30:27.28,duibai,NTP,0000,0000,0000,,小说写得怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So how goes the novel?{\r}
+Dialogue: 0,0:30:27.28,0:30:29.73,duibai,NTP,0000,0000,0000,,不是小说  其实我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's not a novel, actually, which l{\r}
+Dialogue: 0,0:30:29.73,0:30:30.95,duibai,NTP,0000,0000,0000,,你没在写小说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're not writing a novel?{\r}
+Dialogue: 0,0:30:31.41,0:30:32.52,duibai,NTP,0000,0000,0000,,你跟我说你在写小说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You told me you were.{\r}
+Dialogue: 0,0:30:32.65,0:30:33.95,duibai,NTP,0000,0000,0000,,不  是短篇故事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No. Short stories.{\r}
+Dialogue: 0,0:30:34.09,0:30:37.92,duibai,NTP,0000,0000,0000,,我说的是  如果好故事足够多\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I said that if eventually I have enough good ones, that maybe I'll try{\r}
+Dialogue: 0,0:30:39.74,0:30:41.15,duibai,NTP,0000,0000,0000,,我或许会试着出版短篇小说集\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}and publish another collection.{\r}
+Dialogue: 0,0:30:41.15,0:30:42.87,duibai,NTP,0000,0000,0000,,小说集不好卖的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Those really didn't sell.{\r}
+Dialogue: 0,0:30:44.50,0:30:48.08,duibai,NTP,0000,0000,0000,,我只是觉得小说会好卖一些\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I just thought a novel would be easier to sell.{\r}
+Dialogue: 0,0:30:48.14,0:30:49.84,duibai,NTP,0000,0000,0000,,对  可能吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, well, maybe so.{\r}
+Dialogue: 0,0:30:51.82,0:30:54.45,duibai,NTP,0000,0000,0000,,如果你需要我读  我可以提些批评意见\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Ever want me to read anything, I could critique it for you.{\r}
+Dialogue: 0,0:30:54.51,0:30:57.89,duibai,NTP,0000,0000,0000,,哦  不用\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh. No.{\r}
+Dialogue: 0,0:30:59.44,0:31:03.19,duibai,NTP,0000,0000,0000,,我是说  我现在还没到\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean, I'm just not at that stage where I{\r}
+Dialogue: 0,0:31:04.32,0:31:05.43,duibai,NTP,0000,0000,0000,,不用了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No.{\r}
+Dialogue: 0,0:31:05.89,0:31:07.16,duibai,NTP,0000,0000,0000,,提议随时有效\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Open offer.{\r}
+Dialogue: 0,0:31:08.71,0:31:10.54,duibai,NTP,0000,0000,0000,,沃尔特最近怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So, what's up with Walt lately?{\r}
+Dialogue: 0,0:31:10.67,0:31:11.73,duibai,NTP,0000,0000,0000,,你指什么  他挺好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What do you mean? He's fine.{\r}
+Dialogue: 0,0:31:12.74,0:31:15.38,duibai,NTP,0000,0000,0000,,他看起来有点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He just seems,{\r}
+Dialogue: 0,0:31:15.49,0:31:17.06,duibai,NTP,0000,0000,0000,,我也说不清  他比平时话少\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't know. Quieter than usual.{\r}
+Dialogue: 0,0:31:17.52,0:31:19.06,duibai,NTP,0000,0000,0000,,人到半百是件大事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well, turning 50 is a big deal.{\r}
+Dialogue: 0,0:31:19.13,0:31:22.60,duibai,NTP,0000,0000,0000,,比如说  我对40岁可一点都不期待\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean, I'm sure as hell not looking forward to 40.{\r}
+Dialogue: 0,0:31:24.73,0:31:26.97,duibai,NTP,0000,0000,0000,,眼看自己就要不中用了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're gonna be a complete basket-case.{\r}
+Dialogue: 0,0:31:31.51,0:31:32.67,duibai,NTP,0000,0000,0000,,这么说他遇到中年危机了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So it's a mid-life crisis.{\r}
+Dialogue: 0,0:31:32.81,0:31:35.24,duibai,NTP,0000,0000,0000,,没有  他只是不爱说话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No. He's just quiet.{\r}
+Dialogue: 0,0:31:36.12,0:31:37.24,duibai,NTP,0000,0000,0000,,性生活怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How's the sex?{\r}
+Dialogue: 0,0:31:37.37,0:31:38.96,duibai,NTP,0000,0000,0000,,玛丽  我的老天\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Marie, Jesus.{\r}
+Dialogue: 0,0:31:39.49,0:31:41.34,duibai,NTP,0000,0000,0000,,看来有答案了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I guess that answers that.{\r}
+Dialogue: 0,0:32:23.91,0:32:25.29,duibai,NTP,0000,0000,0000,,你就坐着不动\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You just gonna sit there?{\r}
+Dialogue: 0,0:32:33.66,0:32:35.25,duibai,NTP,0000,0000,0000,,这个  看看这个\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This. Look at this.{\r}
+Dialogue: 0,0:32:36.07,0:32:38.23,duibai,NTP,0000,0000,0000,,凯氏烧瓶\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Kjeldahl-style recovery flask{\r}
+Dialogue: 0,0:32:38.26,0:32:40.55,duibai,NTP,0000,0000,0000,,800毫升容量  非常少见\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}800 milliliters, very rare.{\r}
+Dialogue: 0,0:32:40.56,0:32:42.50,duibai,NTP,0000,0000,0000,,我还带来了常用的试验装置\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You got your usual paraphernalia{\r}
+Dialogue: 0,0:32:42.52,0:32:44.79,duibai,NTP,0000,0000,0000,,格里芬烧杯  锥形烧瓶\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Griffin beakers your erlenmeyer flask.{\r}
+Dialogue: 0,0:32:44.79,0:32:47.27,duibai,NTP,0000,0000,0000,,但还有更牛掰的东西\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But the PA resisted staff.{\r}
+Dialogue: 0,0:32:47.50,0:32:51.91,duibai,NTP,0000,0000,0000,,圆底烧瓶  5000毫升的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}A round bottom boiling flask. 5,000 milliliters.{\r}
+Dialogue: 0,0:32:55.64,0:32:57.10,duibai,NTP,0000,0000,0000,,我都是用那种的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well, I cook in one of those.{\r}
+Dialogue: 0,0:32:57.33,0:32:58.61,duibai,NTP,0000,0000,0000,,大个儿的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The big one.{\r}
+Dialogue: 0,0:32:59.73,0:33:00.73,duibai,NTP,0000,0000,0000,,这种样子的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}One of these?{\r}
+Dialogue: 0,0:33:01.74,0:33:03.28,duibai,NTP,0000,0000,0000,,不行  这是个量瓶\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No,this is a volumetric flask.{\r}
+Dialogue: 0,0:33:03.29,0:33:04.55,duibai,NTP,0000,0000,0000,,你不可能用这种玩意制毒的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You wouldn't cook in on of these.{\r}
+Dialogue: 0,0:33:05.20,0:33:06.61,duibai,NTP,0000,0000,0000,,我确实是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah I do.{\r}
+Dialogue: 0,0:33:07.05,0:33:08.59,duibai,NTP,0000,0000,0000,,不  你不可能的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, you don't.{\r}
+Dialogue: 0,0:33:08.64,0:33:12.28,duibai,NTP,0000,0000,0000,,量瓶只能用于普通混合或者滴定\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}A volumetric flask is for general mixing and titration.{\r}
+Dialogue: 0,0:33:12.28,0:33:15.38,duibai,NTP,0000,0000,0000,,不可以用来加热\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You wouldn't apply heat to a volumetric flask.{\r}
+Dialogue: 0,0:33:15.41,0:33:17.59,duibai,NTP,0000,0000,0000,,烧瓶才可以加热\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's what a boiling flask is for.{\r}
+Dialogue: 0,0:33:18.11,0:33:20.35,duibai,NTP,0000,0000,0000,,我的化学课你一点都没学到吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Did you learn nothing from my chemistry class?{\r}
+Dialogue: 0,0:33:20.37,0:33:22.30,duibai,NTP,0000,0000,0000,,是的  你挂我科了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No. You flunked me.{\r}
+Dialogue: 0,0:33:22.91,0:33:24.48,duibai,NTP,0000,0000,0000,,-记得吗  -难怪呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Remember? - No wonder.{\r}
+Dialogue: 0,0:33:24.48,0:33:25.39,duibai,NTP,0000,0000,0000,,蠢货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Prick.{\r}
+Dialogue: 0,0:33:25.88,0:33:29.38,duibai,NTP,0000,0000,0000,,告诉你吧  这可不是化学课\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Now let me tell you something else. This ain't chemistry{\r}
+Dialogue: 0,0:33:29.52,0:33:31.04,duibai,NTP,0000,0000,0000,,这是艺术\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is art.{\r}
+Dialogue: 0,0:33:31.99,0:33:33.56,duibai,NTP,0000,0000,0000,,制毒是艺术\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Cooking is art.{\r}
+Dialogue: 0,0:33:33.60,0:33:36.92,duibai,NTP,0000,0000,0000,,我制的毒很赞  少对我说教\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And the shit I cook is the bomb so don't be telling me.{\r}
+Dialogue: 0,0:33:36.92,0:33:38.99,duibai,NTP,0000,0000,0000,,你制的那是垃圾\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The shit you cook is shit.{\r}
+Dialogue: 0,0:33:39.56,0:33:41.61,duibai,NTP,0000,0000,0000,,我见过你的装备  太荒谬了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I saw your setup. Ridiculous.{\r}
+Dialogue: 0,0:33:41.62,0:33:44.10,duibai,NTP,0000,0000,0000,,我和你不是去制造垃圾\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You and I will not make garbage.{\r}
+Dialogue: 0,0:33:44.44,0:33:46.37,duibai,NTP,0000,0000,0000,,我们要制出稳定的化学纯产品\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We will produce a chemically pure{\r}
+Dialogue: 0,0:33:46.38,0:33:48.70,duibai,NTP,0000,0000,0000,,就像广告宣传的一般\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And stable product that performs as advertised.{\r}
+Dialogue: 0,0:33:48.76,0:33:51.12,duibai,NTP,0000,0000,0000,,不掺假  不掺奶粉  也不掺胡椒粉\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No adulterants. No baby formula. No chili powder.{\r}
+Dialogue: 0,0:33:51.12,0:33:53.85,duibai,NTP,0000,0000,0000,,不  不  胡椒粉是我的标识\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No no chili p is my signature.{\r}
+Dialogue: 0,0:33:53.85,0:33:54.93,duibai,NTP,0000,0000,0000,,不再是了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Not anymore.{\r}
+Dialogue: 0,0:33:56.41,0:33:58.53,duibai,NTP,0000,0000,0000,,好  那咱们走着瞧吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah well we'll see about that.{\r}
+Dialogue: 0,0:33:59.50,0:34:02.04,duibai,NTP,0000,0000,0000,,-这他妈什么玩意儿  -实验室防护用具\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- What the hell is this?  - Lab safety equipment.{\r}
+Dialogue: 0,0:34:02.06,0:34:05.20,duibai,NTP,0000,0000,0000,,我们还会装个紧急洗眼台\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We're also gonna have an emergency eye wash station.{\r}
+Dialogue: 0,0:34:05.99,0:34:08.80,duibai,NTP,0000,0000,0000,,这些化学药品及其蒸气都有毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}These chemicals and their fumes are toxic.{\r}
+Dialogue: 0,0:34:09.27,0:34:10.65,duibai,NTP,0000,0000,0000,,你不知道我现在告诉你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}In case you didn't know that.{\r}
+Dialogue: 0,0:34:10.65,0:34:13.45,duibai,NTP,0000,0000,0000,,只要你乐意  你穿得像个同性恋都行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well you can dress up like a faggot if you want.{\r}
+Dialogue: 0,0:34:13.45,0:34:14.36,duibai,NTP,0000,0000,0000,,我可不穿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Not me.{\r}
+Dialogue: 0,0:34:19.05,0:34:23.57,duibai,NTP,0000,0000,0000,,听好  这些东西最多只能在这放一天\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Listen this stuff doesn't stay more than a day.{\r}
+Dialogue: 0,0:34:23.91,0:34:26.15,duibai,NTP,0000,0000,0000,,什么  我还以为我们要在这里制毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What? I thought we were gonna cook here.{\r}
+Dialogue: 0,0:34:26.15,0:34:27.77,duibai,NTP,0000,0000,0000,,不  我们不在这里弄\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No we're not gonna cook here.{\r}
+Dialogue: 0,0:34:27.78,0:34:30.45,duibai,NTP,0000,0000,0000,,这是我家  我可不在自己的地盘上犯事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay this is my house. I don't shit where I eat.{\r}
+Dialogue: 0,0:34:31.06,0:34:32.56,duibai,NTP,0000,0000,0000,,好  那我们到哪里干活\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well, then where are we gonna work?{\r}
+Dialogue: 0,0:34:32.68,0:34:34.15,duibai,NTP,0000,0000,0000,,你说呀\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You tell me.{\r}
+Dialogue: 0,0:34:34.29,0:34:37.80,duibai,NTP,0000,0000,0000,,这是你的买卖  冒烟也得在你家冒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is your deal, man. You wanna smoke it up, smoke it up at your house.{\r}
+Dialogue: 0,0:34:38.50,0:34:40.33,duibai,NTP,0000,0000,0000,,不  我看不行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No, I didn't think so.{\r}
+Dialogue: 0,0:34:43.52,0:34:44.59,duibai,NTP,0000,0000,0000,,那么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well{\r}
+Dialogue: 0,0:34:45.50,0:34:49.19,duibai,NTP,0000,0000,0000,,不然我们租间那种个人储藏室\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What if we rented one of those self-storage places{\r}
+Dialogue: 0,0:34:49.19,0:34:51.89,duibai,NTP,0000,0000,0000,,就是那些橙色小车库  在那里制造\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know those little orange garages worked out of there?{\r}
+Dialogue: 0,0:34:51.92,0:34:52.63,duibai,NTP,0000,0000,0000,,不行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No.{\r}
+Dialogue: 0,0:34:52.90,0:34:55.93,duibai,NTP,0000,0000,0000,,他们都盯着呢  派了警犬在附近查探\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They're on to that. They got dogs that sniff around.{\r}
+Dialogue: 0,0:34:57.59,0:35:00.43,duibai,NTP,0000,0000,0000,,旅行车  正合你意\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}RV. That's what you want.{\r}
+Dialogue: 0,0:35:01.21,0:35:02.73,duibai,NTP,0000,0000,0000,,像温尼巴古车那样的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What like a Winnebago?{\r}
+Dialogue: 0,0:35:04.99,0:35:05.91,duibai,NTP,0000,0000,0000,,对\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah.{\r}
+Dialogue: 0,0:35:08.80,0:35:10.90,duibai,NTP,0000,0000,0000,,我知道有个家伙正要转手\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I know a dude who wants to sell his.{\r}
+Dialogue: 0,0:35:11.01,0:35:12.58,duibai,NTP,0000,0000,0000,,他平时开去野营\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He just goes camping with it.{\r}
+Dialogue: 0,0:35:13.72,0:35:15.44,duibai,NTP,0000,0000,0000,,一个移动冰毒制造室\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But a mobile meth lab?{\r}
+Dialogue: 0,0:35:15.44,0:35:17.18,duibai,NTP,0000,0000,0000,,超赞  我是说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That'd be the bomb. I mean{\r}
+Dialogue: 0,0:35:17.24,0:35:19.27,duibai,NTP,0000,0000,0000,,咱们开到郊外去\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Drive way out in the boonies.{\r}
+Dialogue: 0,0:35:19.94,0:35:21.49,duibai,NTP,0000,0000,0000,,避过所有耳目\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Be all evasive.{\r}
+Dialogue: 0,0:35:49.45,0:35:52.50,duibai,NTP,0000,0000,0000,,伙计  这还不到7000块  那人要价8500\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Dude this isn't even 7 grand. My guy wants 85.{\r}
+Dialogue: 0,0:35:52.50,0:35:55.18,duibai,NTP,0000,0000,0000,,这是我全部的积蓄了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is all the money I have in the world.{\r}
+Dialogue: 0,0:35:56.05,0:35:58.55,duibai,NTP,0000,0000,0000,,你是毒贩  去还价\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're a drug dealer. Negotiate.{\r}
+Dialogue: 0,0:36:00.36,0:36:02.69,duibai,NTP,0000,0000,0000,,你不是我读书时的那个老师了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You are not how I remember you from class{\r}
+Dialogue: 0,0:36:02.69,0:36:04.03,duibai,NTP,0000,0000,0000,,一点都不像了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean like not at all.{\r}
+Dialogue: 0,0:36:04.88,0:36:06.94,duibai,NTP,0000,0000,0000,,-我得走了  -等等  等一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- I gotta go.  - Wait wait. Hold on.{\r}
+Dialogue: 0,0:36:08.41,0:36:10.31,duibai,NTP,0000,0000,0000,,告诉我你为什么要做这行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Tell me why you're doing this.{\r}
+Dialogue: 0,0:36:10.86,0:36:11.75,duibai,NTP,0000,0000,0000,,说正经的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Seriously.{\r}
+Dialogue: 0,0:36:12.22,0:36:13.58,duibai,NTP,0000,0000,0000,,你又为什么干这行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Why do you do it?{\r}
+Dialogue: 0,0:36:13.60,0:36:16.24,duibai,NTP,0000,0000,0000,,主要为钱\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Money mainly.{\r}
+Dialogue: 0,0:36:17.71,0:36:20.39,duibai,NTP,0000,0000,0000,,-我也是为这个  -别开玩笑了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- There you go.  - Nah come on!{\r}
+Dialogue: 0,0:36:20.50,0:36:24.38,duibai,NTP,0000,0000,0000,,像你这么正直理智的人\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Man some straight like you giant stick up his ass{\r}
+Dialogue: 0,0:36:24.38,0:36:26.13,duibai,NTP,0000,0000,0000,,突然临老撞邪了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}All of a sudden at age what 60{\r}
+Dialogue: 0,0:36:26.13,0:36:27.63,duibai,NTP,0000,0000,0000,,这是要去搞破坏吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He's just gonna break bad?{\r}
+Dialogue: 0,0:36:27.64,0:36:30.72,duibai,NTP,0000,0000,0000,,-我50岁  -这真太离谱了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- I'm 50.  - It's weird, is all okay?{\r}
+Dialogue: 0,0:36:30.72,0:36:32.47,duibai,NTP,0000,0000,0000,,完全看不出来  听着\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It doesn't compute. Listen{\r}
+Dialogue: 0,0:36:32.57,0:36:35.35,duibai,NTP,0000,0000,0000,,如果你这是发神经还是什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}If you've gone crazy or something{\r}
+Dialogue: 0,0:36:35.35,0:36:38.72,duibai,NTP,0000,0000,0000,,你要是  你要是发神经\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean if you've If you've gone crazy{\r}
+Dialogue: 0,0:36:38.72,0:36:41.18,duibai,NTP,0000,0000,0000,,或者抑郁  我只是说说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Or depressed I'm just saying{\r}
+Dialogue: 0,0:36:42.23,0:36:44.59,duibai,NTP,0000,0000,0000,,这些问题  我得了解\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's something I need to know about.{\r}
+Dialogue: 0,0:36:44.91,0:36:47.15,duibai,NTP,0000,0000,0000,,好吗  我是说这对我有影响\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay? I mean that affects me.{\r}
+Dialogue: 0,0:36:52.39,0:36:54.33,duibai,NTP,0000,0000,0000,,我觉悟了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I am awake.{\r}
+Dialogue: 0,0:36:59.13,0:37:00.01,duibai,NTP,0000,0000,0000,,什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What?{\r}
+Dialogue: 0,0:37:03.46,0:37:04.86,duibai,NTP,0000,0000,0000,,买下旅行车\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Buy the RV.{\r}
+Dialogue: 0,0:37:06.58,0:37:08.04,duibai,NTP,0000,0000,0000,,我们明天开工\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We start tomorrow.{\r}
+Dialogue: 0,0:37:14.80,0:37:16.55,duibai,NTP,0000,0000,0000,,试得怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How's it coming in there?{\r}
+Dialogue: 0,0:37:17.26,0:37:18.22,duibai,NTP,0000,0000,0000,,还好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fine.{\r}
+Dialogue: 0,0:37:25.06,0:37:27.14,duibai,NTP,0000,0000,0000,,要我还是你爸进去帮忙吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Do you want me or your dad?{\r}
+Dialogue: 0,0:37:29.23,0:37:30.21,duibai,NTP,0000,0000,0000,,爸\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Dad.{\r}
+Dialogue: 0,0:37:47.44,0:37:49.99,duibai,NTP,0000,0000,0000,,裤腰大小怎样  会不会太紧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So how are those feeling in the waist? Are they too tight?{\r}
+Dialogue: 0,0:37:49.99,0:37:52.45,duibai,NTP,0000,0000,0000,,要是太紧你就别穿了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}'cause you don't want to get them if they're too tight.{\r}
+Dialogue: 0,0:37:53.92,0:37:56.35,duibai,NTP,0000,0000,0000,,这是防缩水的料子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They're pre-shrunk.{\r}
+Dialogue: 0,0:37:56.35,0:37:58.99,duibai,NTP,0000,0000,0000,,不想试试别的款型吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Are you sure you don't want to get a different kind.{\r}
+Dialogue: 0,0:37:58.99,0:38:01.01,duibai,NTP,0000,0000,0000,,像是  修身牛仔裤\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Like you know the skinny jeans?{\r}
+Dialogue: 0,0:38:01.02,0:38:03.04,duibai,NTP,0000,0000,0000,,现在正流行呢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Those are really supposed to be in style now.{\r}
+Dialogue: 0,0:38:03.05,0:38:04.38,duibai,NTP,0000,0000,0000,,玩轮滑的人常穿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The skaters wear them.{\r}
+Dialogue: 0,0:38:04.42,0:38:06.10,duibai,NTP,0000,0000,0000,,我看起来像玩轮滑的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Do I look like a skater?{\r}
+Dialogue: 0,0:38:06.37,0:38:07.55,duibai,NTP,0000,0000,0000,,那好吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}All right.{\r}
+Dialogue: 0,0:38:07.67,0:38:10.39,duibai,NTP,0000,0000,0000,,妈妈  瞧瞧我的裤子\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mom look at my big-boy pants.{\r}
+Dialogue: 0,0:38:11.92,0:38:15.37,duibai,NTP,0000,0000,0000,,妈妈  帮我拉拉链\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mommy could you zip up my big-boy pants?{\r}
+Dialogue: 0,0:38:22.18,0:38:23.70,duibai,NTP,0000,0000,0000,,-别去  -什么\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Don't.  - What?{\r}
+Dialogue: 0,0:38:25.12,0:38:26.14,duibai,NTP,0000,0000,0000,,别管\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Don't.{\r}
+Dialogue: 0,0:38:26.15,0:38:27.45,duibai,NTP,0000,0000,0000,,沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walt.{\r}
+Dialogue: 0,0:38:29.77,0:38:31.40,duibai,NTP,0000,0000,0000,,-他去哪  -我也不知道\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Where  - I have no idea.{\r}
+Dialogue: 0,0:38:33.35,0:38:35.50,duibai,NTP,0000,0000,0000,,知道吗  睬都别睬他们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know what? Don't even look at them.{\r}
+Dialogue: 0,0:38:35.54,0:38:37.65,duibai,NTP,0000,0000,0000,,他们的行为很蠢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}They're obviously very stupid.{\r}
+Dialogue: 0,0:38:42.10,0:38:43.55,duibai,NTP,0000,0000,0000,,我觉得\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I think that um{\r}
+Dialogue: 0,0:38:43.64,0:38:45.50,duibai,NTP,0000,0000,0000,,我觉得这裤子你穿着很好看\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I think those jeans look really good on you.{\r}
+Dialogue: 0,0:38:45.51,0:38:48.11,duibai,NTP,0000,0000,0000,,你要喜欢就买下来  好吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You should get them if you like them okay?{\r}
+Dialogue: 0,0:38:48.16,0:38:50.08,duibai,NTP,0000,0000,0000,,你在这儿待一会儿好吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Why don't you just hang out here for a second?{\r}
+Dialogue: 0,0:38:50.08,0:38:51.53,duibai,NTP,0000,0000,0000,,我马上回来\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'll be right back.{\r}
+Dialogue: 0,0:38:51.60,0:38:52.48,duibai,NTP,0000,0000,0000,,好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Fine.{\r}
+Dialogue: 0,0:38:52.79,0:38:54.71,duibai,NTP,0000,0000,0000,,妈妈  我想\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Mommy I think I pinched a loaf{\r}
+Dialogue: 0,0:38:54.72,0:38:56.64,duibai,NTP,0000,0000,0000,,我拉在新裤子里了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}In my brand-new big-boy pants.{\r}
+Dialogue: 0,0:39:04.29,0:39:06.36,duibai,NTP,0000,0000,0000,,-你在搞什么  -怎么了先生\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- What are you doing?  - What's wrong chief?{\r}
+Dialogue: 0,0:39:06.38,0:39:08.31,duibai,NTP,0000,0000,0000,,走路不太灵便吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Having a little trouble walking?{\r}
+Dialogue: 0,0:39:08.34,0:39:10.33,duibai,NTP,0000,0000,0000,,放开我  放开我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Get off me. Get off me!{\r}
+Dialogue: 0,0:39:14.56,0:39:15.97,duibai,NTP,0000,0000,0000,,我不会让你好过的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'll mess you up man.{\r}
+Dialogue: 0,0:39:15.98,0:39:18.06,duibai,NTP,0000,0000,0000,,你只有一次机会  你最好把握好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Well you'll have one shot. You better make it good.{\r}
+Dialogue: 0,0:39:19.15,0:39:20.50,duibai,NTP,0000,0000,0000,,等着你的女朋友们来帮忙吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What are you waiting for your girlfriends?{\r}
+Dialogue: 0,0:39:20.50,0:39:22.77,duibai,NTP,0000,0000,0000,,快动手啊  打啊\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You better go. Take it.{\r}
+Dialogue: 0,0:39:22.85,0:39:24.50,duibai,NTP,0000,0000,0000,,抡起你的拳头  打啊\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Take your shot. Take it!{\r}
+Dialogue: 0,0:39:25.39,0:39:27.93,duibai,NTP,0000,0000,0000,,来啊  别扭扭捏捏的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Come on. Come on.{\r}
+Dialogue: 0,0:39:27.93,0:39:30.12,duibai,NTP,0000,0000,0000,,走吧  我们走吧  咱们走\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Come on let's get outta here. Let's go.{\r}
+Dialogue: 0,0:39:32.08,0:39:33.14,duibai,NTP,0000,0000,0000,,神经病\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Psycho.{\r}
+Dialogue: 0,0:40:09.56,0:40:11.29,duibai,NTP,0000,0000,0000,,除了奶牛什么都没有\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah nothing but cows!{\r}
+Dialogue: 0,0:40:12.14,0:40:15.92,duibai,NTP,0000,0000,0000,,那边大概2英里处有些大牛棚\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Got some big cow house way out that way like 2 miles{\r}
+Dialogue: 0,0:40:15.92,0:40:18.15,duibai,NTP,0000,0000,0000,,但是没看见人\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But I don't see nobody.{\r}
+Dialogue: 0,0:40:18.75,0:40:20.06,duibai,NTP,0000,0000,0000,,牛棚吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Cow house?{\r}
+Dialogue: 0,0:40:20.65,0:40:22.52,duibai,NTP,0000,0000,0000,,是啊  它们住那儿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah where they live.{\r}
+Dialogue: 0,0:40:23.52,0:40:24.73,duibai,NTP,0000,0000,0000,,奶牛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The cows.{\r}
+Dialogue: 0,0:40:25.74,0:40:27.09,duibai,NTP,0000,0000,0000,,不管这些了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Whatever man.{\r}
+Dialogue: 0,0:40:27.09,0:40:28.74,duibai,NTP,0000,0000,0000,,就在这开工吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah let's cook here.{\r}
+Dialogue: 0,0:40:31.88,0:40:33.34,duibai,NTP,0000,0000,0000,,牛棚\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Cow house.{\r}
+Dialogue: 0,0:40:34.48,0:40:35.60,duibai,NTP,0000,0000,0000,,上帝保佑\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}God help me.{\r}
+Dialogue: 0,0:40:47.60,0:40:49.20,duibai,NTP,0000,0000,0000,,你在干嘛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What are you doing?{\r}
+Dialogue: 0,0:40:49.29,0:40:51.23,duibai,NTP,0000,0000,0000,,这些是我的光鲜衣服\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}These are my good clothes.{\r}
+Dialogue: 0,0:40:52.35,0:40:54.58,duibai,NTP,0000,0000,0000,,我可不能带着一身毒品味回家\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I can't go home smelling like a meth lab.{\r}
+Dialogue: 0,0:40:55.15,0:40:57.00,duibai,NTP,0000,0000,0000,,可以啊  我就是这样的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah you can. I do.{\r}
+Dialogue: 0,0:40:58.76,0:40:59.85,duibai,NTP,0000,0000,0000,,那条\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Those?{\r}
+Dialogue: 0,0:41:01.45,0:41:04.22,duibai,NTP,0000,0000,0000,,你至少会穿着那条吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Those uh you're keeping those on, right?{\r}
+Dialogue: 0,0:41:11.89,0:41:13.00,duibai,NTP,0000,0000,0000,,开工吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Come on.{\r}
+Dialogue: 0,0:41:13.06,0:41:14.67,duibai,NTP,0000,0000,0000,,别浪费时间了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Daylight's burning.{\r}
+Dialogue: 0,0:41:15.06,0:41:16.06,duibai,NTP,0000,0000,0000,,老天\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh my God.{\r}
+Dialogue: 0,0:41:24.72,0:41:27.42,duibai,NTP,0000,0000,0000,,这样  这样很适合你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh this is uh this is a good look for you.{\r}
+Dialogue: 0,0:41:27.42,0:41:31.18,duibai,NTP,0000,0000,0000,,你大概就是世上第二强同志了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And you're maybe only the world's second biggest homo.{\r}
+Dialogue: 0,0:41:31.18,0:41:33.38,duibai,NTP,0000,0000,0000,,闭嘴  过来帮忙\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Would you shut up and help me?{\r}
+Dialogue: 0,0:41:33.57,0:41:34.49,duibai,NTP,0000,0000,0000,,就这样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh yeah.{\r}
+Dialogue: 0,0:41:35.17,0:41:37.37,duibai,NTP,0000,0000,0000,,就是这样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Oh yeah work it.{\r}
+Dialogue: 0,0:41:37.37,0:41:38.84,duibai,NTP,0000,0000,0000,,宝贝  就是这样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Baby work it.{\r}
+Dialogue: 0,0:41:40.08,0:41:41.27,duibai,NTP,0000,0000,0000,,把那关掉\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Turn that off!{\r}
+Dialogue: 0,0:42:47.42,0:42:49.07,duibai,NTP,0000,0000,0000,,这是晶体级冰毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is glass grade.{\r}
+Dialogue: 0,0:42:50.69,0:42:51.98,duibai,NTP,0000,0000,0000,,我说  你真的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I mean you got{\r}
+Dialogue: 0,0:42:51.98,0:42:55.13,duibai,NTP,0000,0000,0000,,老天你真的做出了两三英寸长的结晶体\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Jesus you got crystals in here 2 inches 3 inches long.{\r}
+Dialogue: 0,0:42:56.26,0:42:57.76,duibai,NTP,0000,0000,0000,,这可是特纯级别的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is pure glass.{\r}
+Dialogue: 0,0:42:59.47,0:43:01.09,duibai,NTP,0000,0000,0000,,你他妈的真是艺术家\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You're a damn artist.{\r}
+Dialogue: 0,0:43:02.21,0:43:04.76,duibai,NTP,0000,0000,0000,,这是艺术  怀特老师\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}This is art, Mr. White.{\r}
+Dialogue: 0,0:43:05.29,0:43:07.63,duibai,NTP,0000,0000,0000,,事实上  这只是基础化学\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Actually it's just basic Chemistry{\r}
+Dialogue: 0,0:43:07.66,0:43:10.78,duibai,NTP,0000,0000,0000,,不过谢谢你  杰西  我很高兴这合格了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}But thank you Jesse. I'm glad it's acceptable.{\r}
+Dialogue: 0,0:43:10.78,0:43:13.54,duibai,NTP,0000,0000,0000,,合格  你他妈整个一"食神"嘛\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Acceptable? You're the goddamn Iron Chef.{\r}
+Dialogue: 0,0:43:13.60,0:43:15.29,duibai,NTP,0000,0000,0000,,全天下吸毒的人\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Every jibbhead from here to{\r}
+Dialogue: 0,0:43:15.32,0:43:16.63,duibai,NTP,0000,0000,0000,,都会想尝尝这个的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Timbuktu is wanna taste it.{\r}
+Dialogue: 0,0:43:18.00,0:43:19.62,duibai,NTP,0000,0000,0000,,现在我先来  享受一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Now I gotta I gotta try this.{\r}
+Dialogue: 0,0:43:20.29,0:43:21.79,duibai,NTP,0000,0000,0000,,不  不行\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No. No.{\r}
+Dialogue: 0,0:43:23.62,0:43:25.97,duibai,NTP,0000,0000,0000,,我们只贩毒  不吸毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We only sell it. We don't use it.{\r}
+Dialogue: 0,0:43:26.43,0:43:28.67,duibai,NTP,0000,0000,0000,,谁说的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay since when?{\r}
+Dialogue: 0,0:43:29.58,0:43:31.97,duibai,NTP,0000,0000,0000,,你《迈阿密风云》看多了吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Listen you've been watching way too much Miami Vice.{\r}
+Dialogue: 0,0:43:32.22,0:43:33.83,duibai,NTP,0000,0000,0000,,不吸是不可能的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That ain't happening.{\r}
+Dialogue: 0,0:43:37.29,0:43:39.38,duibai,NTP,0000,0000,0000,,那  现在怎么办\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So What now?{\r}
+Dialogue: 0,0:43:41.31,0:43:43.01,duibai,NTP,0000,0000,0000,,下一步怎么做\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How do we proceed?{\r}
+Dialogue: 0,0:43:47.17,0:43:49.43,duibai,NTP,0000,0000,0000,,明天再多做点\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We cook more tomorrow.{\r}
+Dialogue: 0,0:43:51.05,0:43:52.17,duibai,NTP,0000,0000,0000,,同时\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Meantime{\r}
+Dialogue: 0,0:43:53.05,0:43:55.18,duibai,NTP,0000,0000,0000,,我知道找谁去谈\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I know just the guy to talk to.{\r}
+Dialogue: 0,0:44:06.37,0:44:08.07,duibai,NTP,0000,0000,0000,,小疯  最近如何\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Kraze how you doing my man?{\r}
+Dialogue: 0,0:44:11.99,0:44:14.51,duibai,NTP,0000,0000,0000,,又弄了条狗  不赖啊  伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You got a new dog. Right on man.{\r}
+Dialogue: 0,0:44:14.93,0:44:15.73,duibai,NTP,0000,0000,0000,,叫什么名字\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What's his name?{\r}
+Dialogue: 0,0:44:17.47,0:44:21.93,duibai,NTP,0000,0000,0000,,我以前也有条这样的狗  有它两个大\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, I had a dog like that once, except maybe like twice as big.{\r}
+Dialogue: 0,0:44:21.93,0:44:23.78,duibai,NTP,0000,0000,0000,,超纯种的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Super-purebred.{\r}
+Dialogue: 0,0:44:23.78,0:44:25.54,duibai,NTP,0000,0000,0000,,要是我的话  我会训练它\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Now me personally I would train him{\r}
+Dialogue: 0,0:44:25.54,0:44:27.59,duibai,NTP,0000,0000,0000,,怎样找到毒品\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}To go straight for the, uh, nut ----{\r}
+Dialogue: 0,0:44:27.59,0:44:29.90,duibai,NTP,0000,0000,0000,,闭嘴  一手交钱一手交货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Just shut your mouth and show me your money.{\r}
+Dialogue: 0,0:44:29.90,0:44:31.03,duibai,NTP,0000,0000,0000,,我不是来买货的  伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I ain't buying ese.{\r}
+Dialogue: 0,0:44:32.04,0:44:33.24,duibai,NTP,0000,0000,0000,,而是来卖货的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'm selling.{\r}
+Dialogue: 0,0:44:43.03,0:44:45.43,duibai,NTP,0000,0000,0000,,告诉我这是不是你见过的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Tell me that ain't the finest Scante{\r}
+Dialogue: 0,0:44:45.43,0:44:46.88,duibai,NTP,0000,0000,0000,,最优的冰毒\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You ever laid eyes on.{\r}
+Dialogue: 0,0:44:47.49,0:44:48.95,duibai,NTP,0000,0000,0000,,去试试看\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Go ahead try it.{\r}
+Dialogue: 0,0:44:50.08,0:44:51.06,duibai,NTP,0000,0000,0000,,小乖乖\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey Poochie.{\r}
+Dialogue: 0,0:44:51.57,0:44:52.57,duibai,NTP,0000,0000,0000,,最近怎样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How you doing?{\r}
+Dialogue: 0,0:44:53.48,0:44:55.15,duibai,NTP,0000,0000,0000,,我的老天\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Jesus Christ.{\r}
+Dialogue: 0,0:44:58.33,0:44:59.86,duibai,NTP,0000,0000,0000,,怎么样  我说吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}See? What'd I say?{\r}
+Dialogue: 0,0:44:59.86,0:45:00.56,duibai,NTP,0000,0000,0000,,还好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's all right.{\r}
+Dialogue: 0,0:45:00.56,0:45:02.76,duibai,NTP,0000,0000,0000,,还好  还好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's all right? It's all right?{\r}
+Dialogue: 0,0:45:02.76,0:45:03.49,duibai,NTP,0000,0000,0000,,是还好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah. It's all right.{\r}
+Dialogue: 0,0:45:03.74,0:45:04.96,duibai,NTP,0000,0000,0000,,怎么  重操旧业了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}So what? You back in business?{\r}
+Dialogue: 0,0:45:04.97,0:45:06.15,duibai,NTP,0000,0000,0000,,是啊  我回来了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hell yeah I'm back.{\r}
+Dialogue: 0,0:45:06.83,0:45:08.39,duibai,NTP,0000,0000,0000,,来势汹汹\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}With a Vengeance.{\r}
+Dialogue: 0,0:45:08.41,0:45:10.51,duibai,NTP,0000,0000,0000,,窝囊废也得讨生活啊\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Vato loco gotta make a living.{\r}
+Dialogue: 0,0:45:10.51,0:45:13.19,duibai,NTP,0000,0000,0000,,你知道你表弟被抓的事了吧\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know with your cousin gone away and all.{\r}
+Dialogue: 0,0:45:14.19,0:45:17.13,duibai,NTP,0000,0000,0000,,听着  伙计  埃米利奥那事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And listen homes about that.{\r}
+Dialogue: 0,0:45:18.21,0:45:20.28,duibai,NTP,0000,0000,0000,,我真的很伤心\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It really broke me up about Emilio.{\r}
+Dialogue: 0,0:45:21.78,0:45:23.14,duibai,NTP,0000,0000,0000,,那哥们就像我兄弟\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That dude is like my brother.{\r}
+Dialogue: 0,0:45:24.08,0:45:25.84,duibai,NTP,0000,0000,0000,,他还好吧  去看过他了吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He okay? You talk to him?{\r}
+Dialogue: 0,0:45:25.84,0:45:27.37,duibai,NTP,0000,0000,0000,,恩  我和他聊过了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah, yeah I talked to him.{\r}
+Dialogue: 0,0:45:27.40,0:45:28.23,duibai,NTP,0000,0000,0000,,他说条子来的时候\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He said when the feds came{\r}
+Dialogue: 0,0:45:28.24,0:45:30.73,duibai,NTP,0000,0000,0000,,你还在跟隔壁的马子鬼混\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You were out sticking it in some neighbor lady.{\r}
+Dialogue: 0,0:45:31.53,0:45:33.97,duibai,NTP,0000,0000,0000,,你知道的  我正好逃过了一劫\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey you know, I got lucky twice.{\r}
+Dialogue: 0,0:45:33.98,0:45:35.29,duibai,NTP,0000,0000,0000,,我不知道  伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't know, man.{\r}
+Dialogue: 0,0:45:36.06,0:45:37.96,duibai,NTP,0000,0000,0000,,埃米利奥觉得\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Emilio{\r}
+Dialogue: 0,0:45:39.67,0:45:42.22,duibai,NTP,0000,0000,0000,,你临阵脱逃了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He thinks maybe you dimed on him.{\r}
+Dialogue: 0,0:45:44.04,0:45:45.46,duibai,NTP,0000,0000,0000,,他胡说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That is bullshit.{\r}
+Dialogue: 0,0:45:46.70,0:45:48.74,duibai,NTP,0000,0000,0000,,疯狂小八  他在说胡话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That is bullshit, krazy-8!{\r}
+Dialogue: 0,0:45:48.91,0:45:52.02,duibai,NTP,0000,0000,0000,,他敢这么想我他妈踢死他\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I should kick his punk ass for even thinking that.{\r}
+Dialogue: 0,0:45:52.30,0:45:54.35,duibai,NTP,0000,0000,0000,,那啥  下次再去看埃米利奥的时候\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You know what? Next time you talk to Emilio{\r}
+Dialogue: 0,0:45:55.19,0:45:57.18,duibai,NTP,0000,0000,0000,,你帮我转告他  好吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You tell him for me, all right?{\r}
+Dialogue: 0,0:46:01.23,0:46:02.37,duibai,NTP,0000,0000,0000,,何不你自己跟他说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Why don't you tell him yourself?{\r}
+Dialogue: 0,0:46:02.94,0:46:05.42,duibai,NTP,0000,0000,0000,,-他今天早上保释出来了  -来呀  笨蛋\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}- Made bail this morning.  - Go ahead Pendejo.{\r}
+Dialogue: 0,0:46:06.05,0:46:07.72,duibai,NTP,0000,0000,0000,,踢死我呀\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Kick my ass.{\r}
+Dialogue: 0,0:46:07.76,0:46:08.51,duibai,NTP,0000,0000,0000,,听我解释\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey listen{\r}
+Dialogue: 0,0:46:11.71,0:46:12.71,duibai,NTP,0000,0000,0000,,这是哪搞来的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Where did you get this?{\r}
+Dialogue: 0,0:46:15.49,0:46:17.49,duibai,NTP,0000,0000,0000,,凭你这小杂种是做不出来的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I know your little punk ass didn't cook it.{\r}
+Dialogue: 0,0:46:47.74,0:46:49.06,duibai,NTP,0000,0000,0000,,伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Hey man.{\r}
+Dialogue: 0,0:46:49.71,0:46:51.37,duibai,NTP,0000,0000,0000,,你这算啥  裸体主义者\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You some kind of nudist?{\r}
+Dialogue: 0,0:46:53.71,0:46:56.59,duibai,NTP,0000,0000,0000,,你就是在这里造出那高级货来的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}That's some stone-fine tick tick you been cooking there ese.{\r}
+Dialogue: 0,0:46:57.24,0:46:58.34,duibai,NTP,0000,0000,0000,,来跟着我干怎么样\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}How about you come work for me?{\r}
+Dialogue: 0,0:47:00.31,0:47:02.86,duibai,NTP,0000,0000,0000,,出价合理的话\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'd be willing to sell it to you if{\r}
+Dialogue: 0,0:47:04.04,0:47:05.55,duibai,NTP,0000,0000,0000,,我愿意给你供货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The price is right.{\r}
+Dialogue: 0,0:47:16.58,0:47:18.37,duibai,NTP,0000,0000,0000,,这都你一个人造出来的吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You out here all by yourself huh?{\r}
+Dialogue: 0,0:47:27.08,0:47:28.63,duibai,NTP,0000,0000,0000,,我认识你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I know you.{\r}
+Dialogue: 0,0:47:28.85,0:47:31.44,duibai,NTP,0000,0000,0000,,我被抓的时候他就在那  跟缉毒组在一块儿\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}He was there when I got busted. He's with the DEA!{\r}
+Dialogue: 0,0:47:31.85,0:47:32.73,duibai,NTP,0000,0000,0000,,没有\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}No.{\r}
+Dialogue: 0,0:47:33.25,0:47:34.94,duibai,NTP,0000,0000,0000,,你他妈该死的告密者\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You rata-snitch motherfucker!{\r}
+Dialogue: 0,0:47:35.75,0:47:37.39,duibai,NTP,0000,0000,0000,,快跑  怀特老师  快跑\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Run Mr. White! Run!{\r}
+Dialogue: 0,0:47:47.52,0:47:48.77,duibai,NTP,0000,0000,0000,,把他们俩都给毙了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I say we cap them both.{\r}
+Dialogue: 0,0:47:56.68,0:47:58.63,duibai,NTP,0000,0000,0000,,那批货真的是你制的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You really cook up that batch?{\r}
+Dialogue: 0,0:48:00.25,0:48:01.36,duibai,NTP,0000,0000,0000,,是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Yeah.{\r}
+Dialogue: 0,0:48:01.47,0:48:02.92,duibai,NTP,0000,0000,0000,,你是个艺术家\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You an artist.{\r}
+Dialogue: 0,0:48:05.06,0:48:06.35,duibai,NTP,0000,0000,0000,,真是太可惜了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}It's a damn shame.{\r}
+Dialogue: 0,0:48:06.60,0:48:08.87,duibai,NTP,0000,0000,0000,,等等  等一下\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Wait! Wait a minute.{\r}
+Dialogue: 0,0:48:10.21,0:48:11.35,duibai,NTP,0000,0000,0000,,听我说\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Listen to me.{\r}
+Dialogue: 0,0:48:12.10,0:48:13.76,duibai,NTP,0000,0000,0000,,我把秘方给你们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'll teach you my recipe.{\r}
+Dialogue: 0,0:48:14.75,0:48:16.96,duibai,NTP,0000,0000,0000,,你刚怎么说来着  也想造出这样的货\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What do you say? You want to cook like me?{\r}
+Dialogue: 0,0:48:20.07,0:48:21.88,duibai,NTP,0000,0000,0000,,放了我们俩\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}You let us both live{\r}
+Dialogue: 0,0:48:23.15,0:48:24.87,duibai,NTP,0000,0000,0000,,我就教你们\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And I will teach you.{\r}
+Dialogue: 0,0:48:56.82,0:48:58.19,duibai,NTP,0000,0000,0000,,这里不许抽烟\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Put the cigarette out.{\r}
+Dialogue: 0,0:49:01.34,0:49:02.41,duibai,NTP,0000,0000,0000,,拜托了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Please.{\r}
+Dialogue: 0,0:49:40.80,0:49:42.41,yingzimu,NTP,0000,0000,0000,,{\fs8\bord0\fn黑体\pos(270,175)\1c&H000000&}红  磷
+Dialogue: 0,0:49:40.80,0:49:42.41,renwujianjie,NTP,0000,0000,0000,,{\b1\fn黑体\fs10\pos(5,250)}红磷:\N位于元素周期表第15位 元素符号P 紫红或略带棕色的无定形粉末\N有光泽 密度2.34克/厘米3 加热升华 但在4300千帕压强下加热\N至590℃可熔融 汽化后再凝华则得白磷 难溶于水和CS2 乙醚 氨等\N略溶于无水乙醇 无毒无气味 燃烧时产生白烟 烟有毒
+Dialogue: 0,0:49:40.80,0:49:42.41,kuangjia,NTP,0000,0000,0000,,{\fscx300\fscy90\pos(83,270)}■
+Dialogue: 0,0:49:46.64,0:49:48.02,duibai,NTP,0000,0000,0000,,快点  伙计\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Move it homes.{\r}
+Dialogue: 0,0:49:48.28,0:49:49.95,duibai,NTP,0000,0000,0000,,没那么多时间跟你耗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We ain't got all day.{\r}
+Dialogue: 0,0:49:52.67,0:49:53.60,duibai,NTP,0000,0000,0000,,好的\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Okay.{\r}
+Dialogue: 0,0:54:05.25,0:54:06.57,duibai,NTP,0000,0000,0000,,怎么了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What happened?{\r}
+Dialogue: 0,0:54:10.66,0:54:12.45,duibai,NTP,0000,0000,0000,,你怎么他们了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}What'd you do to them?{\r}
+Dialogue: 0,0:54:13.98,0:54:16.36,duibai,NTP,0000,0000,0000,,潮湿状态下的红磷\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Red Phosphorus in the presence of moisture{\r}
+Dialogue: 0,0:54:16.36,0:54:19.89,duibai,NTP,0000,0000,0000,,遇热会加速产生磷化氢\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}And accelerated by heat yields Phosphorus Hydride.{\r}
+Dialogue: 0,0:54:21.74,0:54:23.11,duibai,NTP,0000,0000,0000,,一种剧毒气体\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Phosphine gas.{\r}
+Dialogue: 0,0:54:23.91,0:54:25.24,duibai,NTP,0000,0000,0000,,吸入这么小小一口\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}One good whiff and{\r}
+Dialogue: 0,0:54:50.55,0:54:51.75,duibai,NTP,0000,0000,0000,,我们得\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We gotta{\r}
+Dialogue: 0,0:54:54.25,0:54:56.73,duibai,NTP,0000,0000,0000,,我们得  清理下现场\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}We gotta clean this up.{\r}
+Dialogue: 0,0:55:45.12,0:55:46.56,duibai,NTP,0000,0000,0000,,你去哪了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Where were you?{\r}
+Dialogue: 0,0:55:55.01,0:55:55.87,duibai,NTP,0000,0000,0000,,沃尔特\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walter.{\r}
+Dialogue: 0,0:55:59.28,0:56:02.23,duibai,NTP,0000,0000,0000,,我不知道你最近怎么了  但是\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I don't know what's been going on with you lately but{\r}
+Dialogue: 0,0:56:02.23,0:56:04.58,duibai,NTP,0000,0000,0000,,没事  我很好\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Nothing. I'm fine.{\r}
+Dialogue: 0,0:56:04.80,0:56:06.42,duibai,NTP,0000,0000,0000,,不管是怎么回事\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Whatever it is{\r}
+Dialogue: 0,0:56:07.20,0:56:08.81,duibai,NTP,0000,0000,0000,,我告诉你\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I'll tell you this.{\r}
+Dialogue: 0,0:56:09.65,0:56:12.58,duibai,NTP,0000,0000,0000,,我不喜欢你有事瞒着我\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}I do not like it when you don't talk to me.{\r}
+Dialogue: 0,0:56:14.20,0:56:16.94,duibai,NTP,0000,0000,0000,,最不济也就是把我甩了罢了\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}The worst thing you can do is shut me out.{\r}
+Dialogue: 0,0:57:08.92,0:57:11.14,duibai,NTP,0000,0000,0000,,沃尔特  那还是你吗\N{\fnCalibri Italic\fs14\1c&H3CF1F3&\blur2}Walter is that you?{\r}
+
+

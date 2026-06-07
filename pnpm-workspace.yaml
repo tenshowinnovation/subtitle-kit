@@ -1,0 +1,10 @@
+packages:
+    - "packages/*"
+
+catalog:
+    "@types/node": "^22.19.19"
+    oxfmt: "^0.53.0"
+    oxlint: "^1.68.0"
+    tsdown: "^0.22.2"
+    typescript: "^6.0.3"
+    vitest: "^3.2.4"

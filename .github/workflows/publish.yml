@@ -1,0 +1,75 @@
+name: Publish
+
+on:
+    workflow_dispatch:
+        inputs:
+            version:
+                description: "Package version to publish"
+                required: true
+                type: string
+
+permissions:
+    contents: read
+    id-token: write
+
+jobs:
+    publish:
+        name: Publish to npm
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v6
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v6
+              with:
+                  version: 10.33.2
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 24
+                  cache: pnpm
+                  registry-url: "https://registry.npmjs.org"
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Verify requested version
+              run: |
+                  for pkg in core cli; do
+                    PACKAGE_VERSION=$(node -p "require('./packages/$pkg/package.json').version")
+                    if [ "$PACKAGE_VERSION" != "${{ inputs.version }}" ]; then
+                      echo "Input version '${{ inputs.version }}' does not match @subtitle-kit/$pkg version '$PACKAGE_VERSION'."
+                      exit 1
+                    fi
+                  done
+
+            - name: Build
+              run: pnpm build
+
+            - name: Typecheck
+              run: pnpm typecheck
+
+            - name: Test
+              run: pnpm test
+
+            - name: Pack dry run
+              run: pnpm pack:dry-run
+
+            # Publish core first so the CLI's @subtitle-kit/core dependency resolves.
+            - name: Publish @subtitle-kit/core
+              run: |
+                  TARBALL=$(pnpm -C packages/core pack --pack-destination "$RUNNER_TEMP" | tail -n 1)
+                  npm publish "$TARBALL" --access public --provenance --registry https://registry.npmjs.org
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+            - name: Publish @subtitle-kit/cli
+              run: |
+                  TARBALL=$(pnpm -C packages/cli pack --pack-destination "$RUNNER_TEMP" | tail -n 1)
+                  npm publish "$TARBALL" --access public --provenance --registry https://registry.npmjs.org
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

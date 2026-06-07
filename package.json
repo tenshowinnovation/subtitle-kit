@@ -1,0 +1,25 @@
+{
+	"name": "subtitle-kit-monorepo",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "pnpm -r build",
+		"format": "oxfmt .",
+		"format:check": "oxfmt --check .",
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
+		"typecheck": "pnpm -r typecheck",
+		"test": "pnpm -r test",
+		"pack:dry-run": "pnpm -r exec pnpm pack --dry-run"
+	},
+	"devDependencies": {
+		"oxfmt": "catalog:",
+		"oxlint": "catalog:"
+	},
+	"engines": {
+		"node": ">=18.18.0",
+		"pnpm": ">=10.0.0"
+	},
+	"packageManager": "pnpm@10.33.2"
+}

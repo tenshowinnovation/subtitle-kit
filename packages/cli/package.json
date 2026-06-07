@@ -1,0 +1,64 @@
+{
+	"name": "@subtitle-kit/cli",
+	"version": "0.1.0",
+	"description": "Command-line subtitle converter and editor (SRT, WebVTT, ASS/SSA, SBV, LRC, JSON, JSONL).",
+	"keywords": [
+		"ass",
+		"caption",
+		"captions",
+		"cli",
+		"converter",
+		"lrc",
+		"sbv",
+		"srt",
+		"subtitle",
+		"subtitles",
+		"vtt",
+		"webvtt"
+	],
+	"homepage": "https://github.com/tenshowinnovation/subtitle-kit#readme",
+	"bugs": {
+		"url": "https://github.com/tenshowinnovation/subtitle-kit/issues"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tenshowinnovation/subtitle-kit",
+		"directory": "packages/cli"
+	},
+	"bin": {
+		"subkit": "./dist/cli.mjs",
+		"subtitle-kit": "./dist/cli.mjs"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"type": "module",
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit -p tsconfig.json",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"dependencies": {
+		"@subtitle-kit/core": "workspace:^",
+		"commander": "^12.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:",
+		"tsdown": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"engines": {
+		"node": ">=18.18.0"
+	}
+}
