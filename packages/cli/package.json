@@ -43,6 +43,7 @@
 		"access": "public"
 	},
 	"scripts": {
+		"prepack": "node -e \"require('fs').copyFileSync('../../LICENSE','LICENSE')\"",
 		"build": "tsdown",
 		"typecheck": "tsc --noEmit -p tsconfig.json",
 		"test": "vitest run",

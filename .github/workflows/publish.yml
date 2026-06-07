@@ -1,20 +1,23 @@
-name: Publish
+name: Release
+
+# Push a version tag to cut a release:
+#   git tag v0.2.0 && git push origin v0.2.0
+# This publishes both packages to npm (with provenance) and creates a matching
+# GitHub Release whose notes are generated from the commit/PR history. GitHub
+# attaches the Source code (zip/tar.gz) assets automatically.
 
 on:
-    workflow_dispatch:
-        inputs:
-            version:
-                description: "Package version to publish"
-                required: true
-                type: string
+    push:
+        tags:
+            - "v*"
 
 permissions:
-    contents: read
-    id-token: write
+    contents: write # create the GitHub Release
+    id-token: write # npm provenance
 
 jobs:
-    publish:
-        name: Publish to npm
+    release:
+        name: Publish + GitHub Release
         runs-on: ubuntu-latest
         timeout-minutes: 10
 
@@ -37,12 +40,18 @@ jobs:
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
 
-            - name: Verify requested version
+            - name: Resolve version from tag
+              run: |
+                  VERSION="${GITHUB_REF_NAME#v}"
+                  echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+                  echo "Releasing $GITHUB_REF_NAME (version $VERSION)"
+
+            - name: Verify package versions match the tag
               run: |
                   for pkg in core cli; do
                     PACKAGE_VERSION=$(node -p "require('./packages/$pkg/package.json').version")
-                    if [ "$PACKAGE_VERSION" != "${{ inputs.version }}" ]; then
-                      echo "Input version '${{ inputs.version }}' does not match @tenshowinnovation/subtitle-kit-$pkg version '$PACKAGE_VERSION'."
+                    if [ "$PACKAGE_VERSION" != "$VERSION" ]; then
+                      echo "Tag $GITHUB_REF_NAME does not match @tenshowinnovation/subtitle-kit-$pkg version '$PACKAGE_VERSION'."
                       exit 1
                     fi
                   done
@@ -59,17 +68,35 @@ jobs:
             - name: Pack dry run
               run: pnpm pack:dry-run
 
-            # Publish core first so the CLI's @tenshowinnovation/subtitle-kit-core dependency resolves.
-            - name: Publish @tenshowinnovation/subtitle-kit-core
-              run: |
-                  TARBALL=$(pnpm -C packages/core pack --pack-destination "$RUNNER_TEMP" | tail -n 1)
-                  npm publish "$TARBALL" --access public --provenance --registry https://registry.npmjs.org
+            # Publish core before cli so the CLI's dependency resolves. Each
+            # publish is skipped if that version is already on npm, so re-running
+            # a tag is safe.
+            - name: Publish to npm
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run: |
+                  set -e
+                  publish_pkg() {
+                    dir="$1"; name="$2"
+                    if npm view "$name@$VERSION" version --registry https://registry.npmjs.org >/dev/null 2>&1; then
+                      echo "::notice::$name@$VERSION already published — skipping"
+                      return 0
+                    fi
+                    tarball=$(pnpm -C "packages/$dir" pack --pack-destination "$RUNNER_TEMP" | tail -n 1)
+                    npm publish "$tarball" --access public --provenance --registry https://registry.npmjs.org
+                  }
+                  publish_pkg core @tenshowinnovation/subtitle-kit-core
+                  publish_pkg cli  @tenshowinnovation/subtitle-kit-cli
 
-            - name: Publish @tenshowinnovation/subtitle-kit-cli
-              run: |
-                  TARBALL=$(pnpm -C packages/cli pack --pack-destination "$RUNNER_TEMP" | tail -n 1)
-                  npm publish "$TARBALL" --access public --provenance --registry https://registry.npmjs.org
+            - name: Create GitHub Release
               env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+                    echo "Release $GITHUB_REF_NAME already exists — skipping"
+                  else
+                    gh release create "$GITHUB_REF_NAME" \
+                      --title "$GITHUB_REF_NAME" \
+                      --generate-notes \
+                      --verify-tag
+                  fi

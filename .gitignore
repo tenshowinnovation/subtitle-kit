@@ -16,3 +16,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Per-package LICENSE is generated from the root LICENSE at pack time (prepack)
+packages/*/LICENSE
