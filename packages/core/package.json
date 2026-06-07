@@ -1,5 +1,5 @@
 {
-	"name": "@subtitle-kit/core",
+	"name": "@tenshowinnovation/subtitle-kit-core",
 	"version": "0.1.0",
 	"description": "Parse, transform, and convert subtitles between every common format (SRT, WebVTT, ASS/SSA, SBV, LRC, JSON, JSONL).",
 	"keywords": [

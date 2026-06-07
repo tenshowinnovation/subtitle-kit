@@ -10,14 +10,14 @@ import {
 	stringify,
 	type SubtitleDocument,
 	type SubtitleFormat,
-} from "@subtitle-kit/core";
+} from "@tenshowinnovation/subtitle-kit-core";
 import {
 	isStreamable,
 	parseStream,
 	scaleStream,
 	shiftStream,
 	stringifyStream,
-} from "@subtitle-kit/core/stream";
+} from "@tenshowinnovation/subtitle-kit-core/stream";
 import { Command, CommanderError } from "commander";
 
 /**

@@ -1,6 +1,6 @@
-# @subtitle-kit/cli
+# @tenshowinnovation/subtitle-kit-cli
 
-A fast, friendly command-line subtitle converter and editor. Wraps the zero-dependency [`@subtitle-kit/core`](../core) and installs the `subtitle-kit` and `subkit` binaries.
+A fast, friendly command-line subtitle converter and editor. Wraps the zero-dependency [`@tenshowinnovation/subtitle-kit-core`](../core) and installs the `subtitle-kit` and `subkit` binaries.
 
 Supported formats: **SRT**, **WebVTT**, **ASS/SSA**, **SBV** (YouTube), **LRC** (lyrics), **JSON**, **JSONL**, plain **text**.
 
@@ -13,9 +13,9 @@ Supported formats: **SRT**, **WebVTT**, **ASS/SSA**, **SBV** (YouTube), **LRC** 
 ## Install
 
 ```sh
-pnpm add -g @subtitle-kit/cli
+pnpm add -g @tenshowinnovation/subtitle-kit-cli
 # or run ad-hoc
-npx @subtitle-kit/cli convert movie.srt --to vtt
+npx @tenshowinnovation/subtitle-kit-cli convert movie.srt --to vtt
 ```
 
 ## Usage
@@ -77,7 +77,7 @@ subtitle-kit --help | --version
 
 Use `-` as `<input>` to read from stdin. Output goes to stdout unless `-o` is given.
 
-For programmatic use, depend on [`@subtitle-kit/core`](../core) directly.
+For programmatic use, depend on [`@tenshowinnovation/subtitle-kit-core`](../core) directly.
 
 ## License
 

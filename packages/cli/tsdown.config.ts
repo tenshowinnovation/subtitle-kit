@@ -7,7 +7,7 @@ export default defineConfig({
 	format: ["esm"],
 	platform: "node",
 	// Keep the core library as a runtime dependency rather than inlining it.
-	external: ["@subtitle-kit/core"],
+	external: ["@tenshowinnovation/subtitle-kit-core"],
 	outExtensions: ({ format }) => ({
 		js: format === "es" ? ".mjs" : format === "cjs" ? ".cjs" : ".js",
 	}),

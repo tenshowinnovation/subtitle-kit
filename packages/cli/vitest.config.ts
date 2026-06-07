@@ -12,11 +12,11 @@ export default defineConfig({
 		// The subpath alias must precede the base alias so it wins.
 		alias: [
 			{
-				find: "@subtitle-kit/core/stream",
+				find: "@tenshowinnovation/subtitle-kit-core/stream",
 				replacement: fileURLToPath(new URL("../core/src/stream.ts", import.meta.url)),
 			},
 			{
-				find: "@subtitle-kit/core",
+				find: "@tenshowinnovation/subtitle-kit-core",
 				replacement: fileURLToPath(new URL("../core/src/index.ts", import.meta.url)),
 			},
 		],

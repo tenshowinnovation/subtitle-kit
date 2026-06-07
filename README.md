@@ -20,20 +20,20 @@ subkit convert s3://my-bucket/movie.srt --to vtt -o movie.vtt
 
 ## Packages
 
-| Package                               | Description                                               | Dependencies |
-| ------------------------------------- | --------------------------------------------------------- | ------------ |
-| [`@subtitle-kit/core`](packages/core) | The library: parse / transform / convert API + streaming. | **0**        |
-| [`@subtitle-kit/cli`](packages/cli)   | The `subtitle-kit` / `subkit` CLI (built on `commander`). | 2            |
+| Package                                                 | Description                                               | Dependencies |
+| ------------------------------------------------------- | --------------------------------------------------------- | ------------ |
+| [`@tenshowinnovation/subtitle-kit-core`](packages/core) | The library: parse / transform / convert API + streaming. | **0**        |
+| [`@tenshowinnovation/subtitle-kit-cli`](packages/cli)   | The `subtitle-kit` / `subkit` CLI (built on `commander`). | 2            |
 
 ```sh
-pnpm add @subtitle-kit/core        # library
-pnpm add -g @subtitle-kit/cli      # CLI
+pnpm add @tenshowinnovation/subtitle-kit-core        # library
+pnpm add -g @tenshowinnovation/subtitle-kit-cli      # CLI
 ```
 
 ## 60-second tour
 
 ```ts
-import { parse, convert, shift, stringify } from "@subtitle-kit/core";
+import { parse, convert, shift, stringify } from "@tenshowinnovation/subtitle-kit-core";
 
 convert(srt, "vtt"); // SRT text -> WebVTT text (source auto-detected)
 const doc = parse(srt); // -> { format, cues: [{ start, end, text }], meta }

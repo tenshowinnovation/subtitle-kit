@@ -1,4 +1,4 @@
-# @subtitle-kit/core
+# @tenshowinnovation/subtitle-kit-core
 
 Parse, transform, and convert subtitles between every common format — **with zero runtime dependencies**.
 
@@ -7,21 +7,21 @@ Supported formats: **SRT**, **WebVTT**, **ASS/SSA**, **SBV** (YouTube), **LRC** 
 - 🪶 **0 dependencies** — pure ESM, ~7 kB, tree-shakeable, runs anywhere (Node, Deno, Bun, the browser).
 - ⏱️ **One model, milliseconds everywhere** — `{ format, cues: [{ start, end, text }], meta }`.
 - 🔁 **Lossless round-trips**, verified byte-for-byte against real-world subtitle files.
-- 🌊 **Optional streaming** via the Node-only [`@subtitle-kit/core/stream`](#streaming-subtitle-kitcorestream) subpath — the main entry stays dependency-free and portable.
+- 🌊 **Optional streaming** via the Node-only [`@tenshowinnovation/subtitle-kit-core/stream`](#streaming-tenshowinnovationsubtitle-kit-corestream) subpath — the main entry stays dependency-free and portable.
 - 🧪 **Test-first**: 154 tests in the core package alone.
 
-> Want a command-line tool? Install [`@subtitle-kit/cli`](../cli) for the `subtitle-kit` / `subkit` binaries.
+> Want a command-line tool? Install [`@tenshowinnovation/subtitle-kit-cli`](../cli) for the `subtitle-kit` / `subkit` binaries.
 
 ## Install
 
 ```sh
-pnpm add @subtitle-kit/core
+pnpm add @tenshowinnovation/subtitle-kit-core
 ```
 
 ## Quick start
 
 ```ts
-import { parse, convert, shift, stringify } from "@subtitle-kit/core";
+import { parse, convert, shift, stringify } from "@tenshowinnovation/subtitle-kit-core";
 
 // Auto-detect the input format and parse into a canonical model.
 const doc = parse(srtText);
@@ -87,14 +87,18 @@ Every transform is **pure** — it returns a new document and never mutates its 
 - `parseTimestamp(str)` — any supported notation → milliseconds.
 - `formatTimestamp(ms, format)` — milliseconds → a format's notation.
 
-## Streaming (`@subtitle-kit/core/stream`)
+## Streaming (`@tenshowinnovation/subtitle-kit-core/stream`)
 
 For large files or pipelines, a Node.js stream API processes subtitles cue-by-cue with constant memory. It is exposed under a separate, Node-only subpath so the main entry stays dependency-free and portable:
 
 ```ts
 import { createReadStream, createWriteStream } from "node:fs";
 import { pipeline } from "node:stream/promises";
-import { parseStream, shiftStream, stringifyStream } from "@subtitle-kit/core/stream";
+import {
+	parseStream,
+	shiftStream,
+	stringifyStream,
+} from "@tenshowinnovation/subtitle-kit-core/stream";
 
 await pipeline(
 	createReadStream("in.srt"),
@@ -116,10 +120,10 @@ Chunk boundaries, CRLF, and a leading BOM are handled transparently.
 
 ## CLI
 
-The command-line interface ships separately as [`@subtitle-kit/cli`](../cli), which installs the `subtitle-kit` and `subkit` binaries:
+The command-line interface ships separately as [`@tenshowinnovation/subtitle-kit-cli`](../cli), which installs the `subtitle-kit` and `subkit` binaries:
 
 ```sh
-pnpm add -g @subtitle-kit/cli
+pnpm add -g @tenshowinnovation/subtitle-kit-cli
 subkit convert movie.srt --to vtt > movie.vtt
 ```
 

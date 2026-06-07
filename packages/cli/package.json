@@ -1,5 +1,5 @@
 {
-	"name": "@subtitle-kit/cli",
+	"name": "@tenshowinnovation/subtitle-kit-cli",
 	"version": "0.1.0",
 	"description": "Command-line subtitle converter and editor (SRT, WebVTT, ASS/SSA, SBV, LRC, JSON, JSONL).",
 	"keywords": [
@@ -49,7 +49,7 @@
 		"test:watch": "vitest"
 	},
 	"dependencies": {
-		"@subtitle-kit/core": "workspace:^",
+		"@tenshowinnovation/subtitle-kit-core": "workspace:^",
 		"commander": "^12.1.0"
 	},
 	"devDependencies": {

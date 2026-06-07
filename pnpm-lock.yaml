@@ -38,7 +38,7 @@ importers:
 
   packages/cli:
     dependencies:
-      '@subtitle-kit/core':
+      '@tenshowinnovation/subtitle-kit-core':
         specifier: workspace:^
         version: link:../core
       commander:
